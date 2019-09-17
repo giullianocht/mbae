@@ -22,12 +22,12 @@ class Inicio extends StatelessWidget {
               Text(
                 "¿ MBA'E ?",
                 style: TextStyle(
-                  fontSize: 35.0,
-                  fontFamily: "Arial",
+                  fontSize: 50.0,
+                  fontFamily: "HeyAugust",
                   color: Colors.redAccent,
                 ),
               ),
-              Padding(padding: EdgeInsets.all(40.0)),
+              Padding(padding: EdgeInsets.all(35.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 //crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,7 +36,13 @@ class Inicio extends StatelessWidget {
                   RaisedButton(
                     color: Colors.redAccent,
                     textColor: Colors.white,
-                    child: Text("Jugar"),
+                    child: Text(
+                      "Jugar",
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontFamily: "HeyAugust",
+                      ),
+                    ),
                     onPressed: () {
                       print("Boton de Jugar Presionado");
                     },
@@ -46,7 +52,13 @@ class Inicio extends StatelessWidget {
                   Padding(padding: EdgeInsets.all(20.0)),
                   //Boton de Intrucciones
                   RaisedButton(
-                    child: Text("Instrucciones"),
+                    child: Text(
+                      "Instrucciones",
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontFamily: "HeyAugust",
+                      ),
+                    ),
                     color: Colors.redAccent,
                     textColor: Colors.white,
                     onPressed: () {
