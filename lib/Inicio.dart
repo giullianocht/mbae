@@ -11,6 +11,7 @@ class Inicio extends StatelessWidget {
     ]);
 
     return MaterialApp(
+      title: "¿Mba'e?",
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
@@ -61,8 +62,4 @@ class Inicio extends StatelessWidget {
       ),
     );
   }
-}
-
-imprimirdatos() {
-  print("hola");
 }
