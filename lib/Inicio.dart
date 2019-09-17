@@ -10,14 +10,14 @@ class Inicio extends StatelessWidget {
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
     ]);
-    //---------------------------------------------------
+    //--------------------------------------------------
     // Servico que oculta todo y deja pantalla completa
     List<SystemUiOverlay> sys = [];
     SystemChrome.setEnabledSystemUIOverlays(sys);
-    //---------------------------------------------------
+    //--------------------------------------------------
     return MaterialApp(
       title: "¿Mba'e?",
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,      
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
