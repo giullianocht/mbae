@@ -24,61 +24,75 @@ class Inicio extends StatelessWidget {
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("assets/inicio.jpg"), fit: BoxFit.cover)),
-          child: Center(
-              child: Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                "¿ MBA'E ?",
-                style: TextStyle(
-                  fontSize: 50.0,
-                  fontFamily: "HeyAugust",
-                  color: Colors.redAccent,
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(35.0)),
-              Row(
+              Center(
+                  child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                //crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  //Boton de Jugar
-                  RaisedButton(
-                    color: Colors.redAccent,
-                    textColor: Colors.white,
-                    child: Text(
-                      "Jugar",
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        fontFamily: "HeyAugust",
-                      ),
+                  Text(
+                    "¿ MBA'E ?",
+                    style: TextStyle(
+                      fontSize: 50.0,
+                      fontFamily: "HeyAugust",
+                      color: Colors.redAccent,
                     ),
-                    onPressed: () {
-                      print("Boton de Jugar Presionado");
-                    },
-                    splashColor: Colors.white,
                   ),
-                  //Espacion entre ellos de 20 pixeles
-                  Padding(padding: EdgeInsets.all(20.0)),
-                  //Boton de Intrucciones
-                  RaisedButton(
-                    child: Text(
-                      "Instrucciones",
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        fontFamily: "HeyAugust",
+                  Padding(padding: EdgeInsets.all(35.0)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    //crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      //Boton de Jugar
+                      RaisedButton(
+                        color: Colors.redAccent,
+                        textColor: Colors.white,
+                        child: Text(
+                          "Jugar",
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontFamily: "HeyAugust",
+                          ),
+                        ),
+                        onPressed: () {
+                          print("Boton de Jugar Presionado");
+                        },
+                        splashColor: Colors.white,
                       ),
-                    ),
-                    color: Colors.redAccent,
-                    textColor: Colors.white,
-                    onPressed: () {
-                      print("Boton de Instrucciones Presionado");
-                    },
-                    splashColor: Colors.white,
-                  )
+                      //Espacion entre ellos de 20 pixeles
+                      Padding(padding: EdgeInsets.all(20.0)),
+                      //Boton de Intrucciones
+                      RaisedButton(
+                        child: Text(
+                          "Instrucciones",
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontFamily: "HeyAugust",
+                          ),
+                        ),
+                        color: Colors.redAccent,
+                        textColor: Colors.white,
+                        onPressed: () {
+                          print("Boton de Instrucciones Presionado");
+                        },
+                        splashColor: Colors.white,
+                      )
+                    ],
+                  ),
                 ],
-              ),
+              )),
             ],
-          )),
+          ),
+        ),
+        // Boton flotante de Informacion
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.info, size: 28.0),
+          elevation: 50.0,
+          backgroundColor: Colors.transparent,
+          onPressed: () {
+            print("Boton Flotante presionado");
+          },
         ),
       ),
     );
