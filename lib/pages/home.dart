@@ -1,24 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-class Inicio extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //--------------------------------------------------
-    // Servicio que bloquea la orientacion vertical
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
-    //--------------------------------------------------
-    // Servico que oculta todo y deja pantalla completa
-    List<SystemUiOverlay> sys = [];
-    SystemChrome.setEnabledSystemUIOverlays(sys);
-    //--------------------------------------------------
-    return MaterialApp(
-      title: "¿Mba'e?",
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: Colors.white,
         body: Container(
           decoration: BoxDecoration(
@@ -94,7 +79,6 @@ class Inicio extends StatelessWidget {
             print("Boton Flotante presionado");
           },
         ),
-      ),
-    );
+      );
   }
 }
