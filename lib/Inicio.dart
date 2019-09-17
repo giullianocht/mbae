@@ -12,9 +12,13 @@ class Inicio extends StatelessWidget {
 
     return MaterialApp(
       title: "¿Mba'e?",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/inicio.jpg"), fit: BoxFit.cover)),
           child: Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
