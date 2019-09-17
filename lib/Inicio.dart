@@ -17,7 +17,7 @@ class Inicio extends StatelessWidget {
     //--------------------------------------------------
     return MaterialApp(
       title: "¿Mba'e?",
-      debugShowCheckedModeBanner: false,      
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
@@ -87,7 +87,7 @@ class Inicio extends StatelessWidget {
         ),
         // Boton flotante de Informacion
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.info, size: 28.0),
+          child: Icon(Icons.info, size: 28.0, color: Colors.redAccent),
           elevation: 50.0,
           backgroundColor: Colors.transparent,
           onPressed: () {
