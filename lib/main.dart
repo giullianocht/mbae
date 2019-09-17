@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Inicio.dart';
+import 'package:mbae/Inicio.dart';
 
 void main() {
   runApp(Inicio());
