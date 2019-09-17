@@ -87,7 +87,7 @@ class Inicio extends StatelessWidget {
         ),
         // Boton flotante de Informacion
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.info, size: 28.0, color: Colors.redAccent),
+          child: Icon(Icons.info, size: 25.0, color: Colors.white),
           elevation: 50.0,
           backgroundColor: Colors.transparent,
           onPressed: () {
