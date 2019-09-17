@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 
 class Inicio extends StatelessWidget {
   @override
-  // Servicio que bloquea la orientacion vertical
   Widget build(BuildContext context) {
+    // Servicio que bloquea la orientacion vertical
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
@@ -12,23 +12,47 @@ class Inicio extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red[100],
+        backgroundColor: Colors.white,
         body: Container(
           child: Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("Bienvenido a Mbae"),
+              Text(
+                "¿ MBA'E ?",
+                style: TextStyle(
+                  fontSize: 35.0,
+                  fontFamily: "Arial",
+                  color: Colors.redAccent,
+                ),
+              ),
               Padding(padding: EdgeInsets.all(40.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 //crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  //Texto Primario
-                  Text("Jugar"),
+                  //Boton de Jugar
+                  RaisedButton(
+                    color: Colors.redAccent,
+                    textColor: Colors.white,
+                    child: Text("Jugar"),
+                    onPressed: () {
+                      print("Boton de Jugar Presionado");
+                    },
+                    splashColor: Colors.white,
+                  ),
+                  //Espacion entre ellos de 20 pixeles
                   Padding(padding: EdgeInsets.all(20.0)),
-                  //Segundo Texto
-                  Text("Instrucciones"),
+                  //Boton de Intrucciones
+                  RaisedButton(
+                    child: Text("Instrucciones"),
+                    color: Colors.redAccent,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      print("Boton de Instrucciones Presionado");
+                    },
+                    splashColor: Colors.white,
+                  )
                 ],
               ),
             ],
@@ -37,4 +61,8 @@ class Inicio extends StatelessWidget {
       ),
     );
   }
+}
+
+imprimirdatos() {
+  print("hola");
 }
