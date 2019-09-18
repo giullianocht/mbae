@@ -1,9 +1,10 @@
 import 'dart:async';
-
+import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
+import 'package:sensors/sensors.dart';
 
 import 'package:mbae/src/providers/tarjeta_provider.dart';
-import 'package:sensors/sensors.dart';
+
 
 //Pagina Home
 class HomePage extends StatefulWidget{
@@ -14,7 +15,7 @@ class HomePage extends StatefulWidget{
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with WidgetsBindingObserver{
 
    // event returned from accelerometer stream
   AccelerometerEvent event;
@@ -114,10 +115,13 @@ class _HomePageState extends State<HomePage> {
 
     if(z >= 7) {
       background = Colors.lightGreenAccent;
+      Vibration.vibrate();
     }else if(z <= -7){
       background = Colors.redAccent;
+      Vibration.vibrate();
     }else{
-      background = Colors.yellow;      
+      background = Colors.yellow; 
+      Vibration.cancel();     
     }
 
     setState(() {});
@@ -135,10 +139,33 @@ class _HomePageState extends State<HomePage> {
   }
 
   @override
+  void initState() {
+    WidgetsBinding.instance.addObserver(this);
+    super.initState();
+  }
+
+  @override
   void dispose() {
     timerAccelerometer?.cancel();
     accel?.cancel();
+    Vibration.cancel();     
     super.dispose();
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if(state == AppLifecycleState.paused){
+      _timer.cancel();
+      timerAccelerometer?.cancel();
+      accel?.cancel();
+      Vibration.cancel(); 
+    }
+    if(state == AppLifecycleState.resumed){
+      startTimer(_start);
+      startAccelerometer();
+    }
   }
   
 
