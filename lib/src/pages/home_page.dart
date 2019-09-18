@@ -13,8 +13,7 @@ class HomePage extends StatefulWidget{
 
 class _HomePageState extends State<HomePage> {
   Timer _timer;
-
-  int _start;
+  int _start = 60;
 
   void startTimer(int start) {
 
@@ -26,7 +25,7 @@ class _HomePageState extends State<HomePage> {
       (Timer timer) => setState(
         () {
           if (_start < 1) {
-            timer.cancel();
+            _timer.cancel();
           } else {
             _start = _start - 1;
           }
@@ -35,37 +34,34 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+
+
   _HomePageState(){
     startTimer(10);
-
   }
 
   @override
   Widget build(BuildContext context) {
     
-
     return Scaffold(
       backgroundColor: Colors.yellow,
-      body: Column(
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[
-          SizedBox(
-            height: 20.0,
+      body: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Text("$_start",style: TextStyle(fontSize: 30),),
+              Container(
+                margin: EdgeInsets.only(bottom: 100.0),
+                child: Text("Mbae",style: TextStyle(fontSize: 80),)
+              )
+            ],
           ),
-          Center(
-            child: Text("$_start",style: TextStyle(fontSize: 30),)
-          ),
-          SizedBox(
-            height: 120.0,
-          ),
-           Center(
-            child: Text("Mbae",style: TextStyle(fontSize: 80),)
-          )
-        ],
-      ),
+      )
     );
 
   }
+
+  
 
 // Widget _prueba() {
 
