@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'developers.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -77,6 +78,9 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.transparent,
           onPressed: () {
             print("Boton Flotante presionado");
+            Navigator.push(context,
+            MaterialPageRoute(
+              builder: (context)=>DevelopersInfo()));            
           },
         ),
       );

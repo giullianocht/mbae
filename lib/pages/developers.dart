@@ -8,9 +8,10 @@ class DevelopersInfo extends StatelessWidget {
         body: Center(
           child: Container(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "HOLAAAAAAA",
+                  "HOLA TEAM",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 40.0,
