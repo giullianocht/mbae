@@ -1,11 +1,48 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+
 import 'package:mbae/src/providers/tarjeta_provider.dart';
 
 //Pagina Home
-class HomePage extends StatelessWidget{
+class HomePage extends StatefulWidget{
   
   @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  Timer _timer;
+
+  int _start;
+
+  void startTimer(int start) {
+
+    _start = start;
+
+    const oneSec = const Duration(milliseconds: 1000);
+    _timer = new Timer.periodic(
+      oneSec,
+      (Timer timer) => setState(
+        () {
+          if (_start < 1) {
+            timer.cancel();
+          } else {
+            _start = _start - 1;
+          }
+        },
+      ),
+    );
+  }
+
+  _HomePageState(){
+    startTimer(10);
+
+  }
+
+  @override
   Widget build(BuildContext context) {
+    
 
     return Scaffold(
       backgroundColor: Colors.yellow,
@@ -16,7 +53,7 @@ class HomePage extends StatelessWidget{
             height: 20.0,
           ),
           Center(
-            child: Text("100",style: TextStyle(fontSize: 30),)
+            child: Text("$_start",style: TextStyle(fontSize: 30),)
           ),
           SizedBox(
             height: 120.0,
@@ -30,7 +67,7 @@ class HomePage extends StatelessWidget{
 
   }
 
-  // Widget _prueba() {
+// Widget _prueba() {
 
   //   return FutureBuilder(
   //     future: tarjetaProvider.cargarTarjetas(),
@@ -64,5 +101,7 @@ class HomePage extends StatelessWidget{
 
   //   return opciones;
   // }
+
+
 
 }
