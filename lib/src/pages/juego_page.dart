@@ -2,8 +2,7 @@ import 'dart:async';
 import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
-
-import 'package:mbae/src/providers/tarjeta_provider.dart';
+//import 'package:mbae/src/providers/tarjeta_provider.dart';
 
 
 //Pagina Home

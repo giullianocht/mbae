@@ -6,7 +6,7 @@ class _TarjetaProvider{
   
   List<dynamic> tarjetas = [];
 
-  _TarjetaProvider(){}
+  _TarjetaProvider();
 
   Future<List<dynamic>> cargarTarjetas() async {
 

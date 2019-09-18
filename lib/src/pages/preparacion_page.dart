@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:mbae/src/pages/home_page.dart';
 
 class PreparationPage extends StatefulWidget {
   PreparationPage({Key key}) : super(key: key);
