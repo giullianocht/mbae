@@ -1,9 +1,10 @@
 import 'dart:async';
-
+import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
+import 'package:sensors/sensors.dart';
 
 import 'package:mbae/src/providers/tarjeta_provider.dart';
-import 'package:sensors/sensors.dart';
+
 
 //Pagina Home
 class HomePage extends StatefulWidget{
@@ -114,10 +115,13 @@ class _HomePageState extends State<HomePage> {
 
     if(z >= 7) {
       background = Colors.lightGreenAccent;
+      Vibration.vibrate();
     }else if(z <= -7){
       background = Colors.redAccent;
+      Vibration.vibrate();
     }else{
-      background = Colors.yellow;      
+      background = Colors.yellow; 
+      Vibration.cancel();     
     }
 
     setState(() {});

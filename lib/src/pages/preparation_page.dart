@@ -22,8 +22,7 @@ class _PreparationPageState extends State<PreparationPage> {
       (Timer timer) => setState(
         () {
           if (_start < 1) {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomePage()));
+            Navigator.pushReplacementNamed(context, 'juego');
             _timer.cancel();
           } else {
             _start = _start - 1;
