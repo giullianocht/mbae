@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'pages/home.dart';
+import 'package:mbae/src/routes/routes.dart';
 
 void main() {
   runApp(MyRunApp());
@@ -22,6 +22,9 @@ class MyRunApp extends StatelessWidget {
     return MaterialApp(
         title: "¿Mba'e?",
         debugShowCheckedModeBanner: false,
-        home: Scaffold(backgroundColor: Colors.white, body: Home()));
+        routes: getApplicationRoutes(),
+        initialRoute: '/',
+        // home: Scaffold(backgroundColor: Colors.white, body: Home())
+        );
   }
 }

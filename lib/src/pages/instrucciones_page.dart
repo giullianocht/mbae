@@ -1,21 +1,11 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-void main() {
-  SystemChrome.setEnabledSystemUIOverlays([]);
-  runApp(new MaterialApp(
-    home: Mypage(),
-  ));
-}
-
-class Mypage extends StatefulWidget {
+class Instrucciones extends StatefulWidget {
   @override
-  _MypageState createState() => new _MypageState();
+  _InstruccionesState createState() => new _InstruccionesState();
 }
 
-class _MypageState extends State<Mypage> {
+class _InstruccionesState extends State<Instrucciones> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -23,24 +13,24 @@ class _MypageState extends State<Mypage> {
         child: PageView(
           children: <Widget>[
             FadeInImage(
-              placeholder: AssetImage('imagenes/vidrio.png'),
-              image: AssetImage('imagenes/prueba1.jpg'),
+              placeholder: AssetImage('assets/vidrio.png'),
+              image: AssetImage('assets/prueba1.jpg'),
               fit: BoxFit.fill,
             ),
             FadeInImage(
-              placeholder: AssetImage('imagenes/vidrio.png'),
-              image: AssetImage('imagenes/instruccion2.png'),
+              placeholder: AssetImage('assets/vidrio.png'),
+              image: AssetImage('assets/instruccion2.png'),
               fit: BoxFit.fill,
             ),
             FadeInImage(
-              placeholder: AssetImage('imagenes/vidrio.png'),
-              image: AssetImage('imagenes/instruccion3.jpg'),
+              placeholder: AssetImage('assets/vidrio.png'),
+              image: AssetImage('assets/instruccion3.jpg'),
               fit: BoxFit.fill,
             ),
             Container(
                 decoration:BoxDecoration(
                   image:DecorationImage( 
-                  image:AssetImage('imagenes/animado.gif'),
+                  image:AssetImage('assets/animado.gif'),
                   fit: BoxFit.cover
                   ),
                 ),

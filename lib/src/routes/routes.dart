@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:mbae/src/pages/developers_page.dart';
 import 'package:mbae/src/pages/home_page.dart';
-import 'package:mbae/src/pages/preparation_page.dart';
+import 'package:mbae/src/pages/instrucciones_page.dart';
+import 'package:mbae/src/pages/juego_page.dart';
+import 'package:mbae/src/pages/preparacion_page.dart';
 
 Map <String, WidgetBuilder> getApplicationRoutes(){
   return <String, WidgetBuilder>{
     'preparacion': (BuildContext context) => PreparationPage(),
-    'juego': (BuildContext context) => HomePage(),
+    'juego': (BuildContext context) => JuegoPage(),
+    'instrucciones': (BuildContext context) => Instrucciones(),
+    'developers': (BuildContext context) => DevelopersInfo(),
+    '/': (BuildContext context) => Home(),
   };
 }
