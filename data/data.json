@@ -1,0 +1,32 @@
+{
+    "nombreApp": "Mbae",
+    "tarjetas": [{
+            "id": 1,
+            "palabra_guarani": "Mbae",
+            "palabra_espanol": "Que",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img1.jpg"
+        },
+        {
+            "id": 2,
+            "palabra_guarani": "Jaha",
+            "palabra_espanol": "Vamos",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img2.jpg"
+        },
+        {
+            "id": 3,
+            "palabra_guarani": "Tembo",
+            "palabra_espanol": "Pilin",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img3.jpg"
+        },
+        {
+            "id": 4,
+            "palabra_guarani": "Revi",
+            "palabra_espanol": "Culo",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        }
+    ]
+}
