@@ -42,7 +42,7 @@ class Home extends StatelessWidget {
                       ),
                       onPressed: () {
                         print("Boton de Jugar Presionado");
-                        Navigator.pushReplacementNamed(context, 'juego');
+                        Navigator.pushReplacementNamed(context, 'preparacion');
                       },
                       splashColor: Colors.white,
                     ),
