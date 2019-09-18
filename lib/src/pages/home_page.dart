@@ -142,6 +142,7 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     timerAccelerometer?.cancel();
     accel?.cancel();
+    Vibration.cancel();     
     super.dispose();
   }
   
