@@ -145,6 +145,11 @@ class _HomePageState extends State<HomePage> {
     Vibration.cancel();     
     super.dispose();
   }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    print('state = $state');
+  }
   
 
 // Widget _prueba() {
