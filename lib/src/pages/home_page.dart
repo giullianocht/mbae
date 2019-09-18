@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget{
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with WidgetsBindingObserver{
 
    // event returned from accelerometer stream
   AccelerometerEvent event;
@@ -148,7 +148,16 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    debugPrint('state = $state \n\n\n\n\n\n\n\n\n\n\n\n');
+    if(state == AppLifecycleState.paused){
+      _timer.cancel();
+      timerAccelerometer?.cancel();
+      accel?.cancel();
+      Vibration.cancel(); 
+    }
+    if(state == AppLifecycleState.resumed){
+      startTimer(_start);
+      startAccelerometer();
+    }
   }
   
 
