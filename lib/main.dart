@@ -46,7 +46,7 @@ class _MypageState extends State<Mypage> {
                 ),
                 padding: EdgeInsets.only(top: 370),
                 child: RaisedButton(
-                          //Vuelve al ultimo activity
+                          //Vuelve al ultimo activity -
                           onPressed: () {
                             _salir();
                           },
