@@ -148,7 +148,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    print('state = $state');
+    debugPrint('state = $state \n\n\n\n\n\n\n\n\n\n\n\n');
   }
   
 
