@@ -6,11 +6,16 @@ class Instrucciones extends StatefulWidget {
 }
 
 class _InstruccionesState extends State<Instrucciones> {
+  PageController pagina =PageController();
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       body: Center(
         child: PageView(
+          scrollDirection: Axis.horizontal,
+          pageSnapping: true,
+          controller: pagina,
+          
           children: <Widget>[
             //Se genera una imagen por pagina
             FadeInImage(
@@ -33,20 +38,20 @@ class _InstruccionesState extends State<Instrucciones> {
               
                 decoration:BoxDecoration(
                   image:DecorationImage( 
-                  image:AssetImage('assets/inicio.jpg'),
+                  image:AssetImage('assets/bosques-hojas.gif'),
                   fit: BoxFit.cover
                   ),
                 ),
                 //padding:MainAxisAlignment.end,
                  padding:EdgeInsets.only(
-                  top: 350,
-                  left: 220,
-                  right: 220,
+                  top: 300,
+                  left: 180,
+                  right: 180,
 
                   ),
-                
-                child: RaisedButton(
-                  
+                child:Column(
+                children:<Widget>[ 
+                    RaisedButton(
                           //Vuelve al ultimo activity -
                           onPressed: () {
                             _salir();
@@ -55,28 +60,47 @@ class _InstruccionesState extends State<Instrucciones> {
                             "Volver al Menu Principal",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 25,
-                              backgroundColor: Color(900),
+                              fontSize: 30,
+                              //backgroundColor: Color(900),
                               fontStyle: FontStyle.italic,
                               fontFamily: "HeyAugust",
-
-                              
                             ),
                           ),  
-                          color:Colors.redAccent,
+                          color:Color(900),
                           textColor: Colors.white,
                           splashColor: Colors.green,
                         ),
+                        RaisedButton(
+                          onPressed: (){},
+                          child: Text(
+                            "Volver a leer las Instrucciones",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              backgroundColor: Color(900),
+                              fontStyle: FontStyle.italic,
+                              fontFamily: "HeyAugust",
+                            ),
+                          ),
+                          color:Color(900),
+                          textColor: Colors.white,
+                          splashColor: Colors.green,
+                        )
+                ],
+                ),
               ),
-
+            
           ],
-          scrollDirection: Axis.horizontal,
-          pageSnapping: true,
+          
+          
         ),
       ),
     );
   }
-
+  
+  void _leernuevo(){
+    pagina.jumpToPage(0);
+  }
   void _salir() {
     Navigator.pop(context);
   }
