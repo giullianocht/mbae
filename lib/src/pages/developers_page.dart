@@ -66,7 +66,7 @@ class DevelopersInfo extends StatelessWidget {
             ContactDeveloper("Giulliano Albrecht  ",
                 "https://www.instagram.com/giulliano_cht"),
             ContactDeveloper("Cristhian Ortellado",
-                "https://www.instagram.com/giulliano_cht"),
+                "https://www.instagram.com/cristhian_ortellado"),
             ContactDeveloper("Mario Gueyraud     ",
                 "https://www.instagram.com/mariogyd"),
             Padding(
