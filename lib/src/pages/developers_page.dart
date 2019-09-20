@@ -68,7 +68,7 @@ class DevelopersInfo extends StatelessWidget {
             ContactDeveloper("Cristhian Ortellado",
                 "https://www.instagram.com/giulliano_cht"),
             ContactDeveloper("Mario Gueyraud     ",
-                "https://www.instagram.com/giulliano_cht"),
+                "https://www.instagram.com/mariogyd"),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Center(
