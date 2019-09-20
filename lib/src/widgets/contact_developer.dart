@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(fontSize: 17);
@@ -33,7 +34,7 @@ class ContactDeveloper extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: GestureDetector(
                     child: Icon(
-                      Icons.assignment_ind,
+                      FontAwesomeIcons.instagram,
                       color: Colors.white,
                     ),
                     onTap: () {
