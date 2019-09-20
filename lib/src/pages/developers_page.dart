@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mbae/src/widgets/contact_developer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(fontSize: 17);
 
@@ -68,6 +69,31 @@ class DevelopersInfo extends StatelessWidget {
                 "https://www.instagram.com/giulliano_cht"),
             ContactDeveloper("Mario Gueyraud     ",
                 "https://www.instagram.com/giulliano_cht"),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Center(
+                child: Text(
+                  "Contacto",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+            ),
+            Center(
+              child: GestureDetector(
+                child: Text(
+                  "mbae.app@gmail.com",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17.0,
+                  ),),
+                onTap: () {
+                  launch("mailto:mbae.app@gmail.com");
+                },
+              ),
+            ),
           ],
         ),
       ),
