@@ -25,24 +25,21 @@ class ContactDeveloper extends StatelessWidget {
                       textAlign: TextAlign.left,
                       text: TextSpan(
                         style: defaultStyle,
-                        children: <TextSpan>[
-                          TextSpan(
-                            text: "- " + this._nombre,
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                launch(_pathinstagram);
-                              },
-                          )
-                        ],
+                        text: "- " + _nombre,
                       ),
                     ),
                   ],
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                  child: Icon(
-                    Icons.assignment_ind,
-                    color: Colors.white,
+                  child: GestureDetector(
+                    child: Icon(
+                      Icons.assignment_ind,
+                      color: Colors.white,
+                    ),
+                    onTap: () {
+                      launch(_pathinstagram);
+                    },
                   ),
                 ),
               ],
