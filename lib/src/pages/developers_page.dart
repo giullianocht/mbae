@@ -22,8 +22,8 @@ class DevelopersInfo extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Center(
-              child: Padding(
-                padding: const EdgeInsets.all(25.0),
+              child: Container(
+                margin: const EdgeInsets.only(bottom: 5.0, top: 20.0),
                 child: Text(
                   "¿ Mba'e ?",
                   style: TextStyle(
@@ -51,7 +51,7 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Center(
                 child: Text(
                   "Desarrolladores",
@@ -66,8 +66,8 @@ class DevelopersInfo extends StatelessWidget {
                 "https://www.instagram.com/giulliano_cht"),
             ContactDeveloper("Cristhian Ortellado",
                 "https://www.instagram.com/giulliano_cht"),
-            ContactDeveloper(
-                "Mario Gueyraud     ", "https://www.instagram.com/giulliano_cht"),
+            ContactDeveloper("Mario Gueyraud     ",
+                "https://www.instagram.com/giulliano_cht"),
           ],
         ),
       ),
