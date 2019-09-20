@@ -1,6 +1,8 @@
 {
     "nombreApp": "Mbae",
-    "tarjetas": [{
+    "tarjetas": 
+    [
+        {
             "id": 1,
             "palabra_guarani": "Mbae",
             "palabra_espanol": "Que",
