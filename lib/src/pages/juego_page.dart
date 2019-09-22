@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
 //import 'package:mbae/src/providers/tarjeta_provider.dart';
 
+import 'package:mbae/src/classes/juego.dart';
 
 //Pagina Home
 class JuegoPage extends StatefulWidget{
@@ -31,6 +32,12 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   //Color
   Color background = Colors.yellow;
+
+  //Bandera para controlar el cambio de estado
+  bool bandera = true;
+
+  //Palabra
+  String palabra = "mbae";
 
   void startTimer(int start) {
 
@@ -70,7 +77,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
               Text("$_start",style: TextStyle(fontSize: 30),),
               Container(
                 margin: EdgeInsets.only(bottom: 100.0),
-                child: Text("Mbae",style: TextStyle(fontSize: 80),)
+                child: Text("$palabra",style: TextStyle(fontSize: 80),)
               )
             ],
           ),
@@ -115,12 +122,30 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     if(z >= 7) {
       background = Colors.lightGreenAccent;
       Vibration.vibrate();
+
+      if(bandera){
+        juego.corregirPalabra(true);
+        bandera = false;
+      }
+
     }else if(z <= -7){
       background = Colors.redAccent;
       Vibration.vibrate();
+
+      if(bandera){
+        juego.corregirPalabra(false);
+        bandera = false;
+      }
+
     }else{
       background = Colors.yellow; 
-      Vibration.cancel();     
+      Vibration.cancel();
+
+      if(!bandera){
+        cambiarPalabra();
+        bandera = true;
+      }
+
     }
 
     setState(() {});
@@ -158,14 +183,22 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     if(state == AppLifecycleState.paused){
       _timer.cancel();
       timerAccelerometer?.cancel();
-      accel?.cancel();
+      accel.pause();
       Vibration.cancel(); 
     }
     if(state == AppLifecycleState.resumed){
       startTimer(_start);
+      accel.resume();
       startAccelerometer();
     }
   }
+
+  void cambiarPalabra() async {
+    palabra = await juego.obtenerPalabra();
+    setState(() {});
+  }
+
+  
   
 
 // Widget _prueba() {
