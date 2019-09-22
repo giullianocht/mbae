@@ -124,7 +124,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       Vibration.vibrate();
 
       if(bandera){
-        juego.corregirPalabra(true);
+        juego.corregirPalabra(correcto: true);
         bandera = false;
       }
 
@@ -133,7 +133,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       Vibration.vibrate();
 
       if(bandera){
-        juego.corregirPalabra(false);
+        juego.corregirPalabra(correcto: false);
         bandera = false;
       }
 
@@ -193,49 +193,11 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     }
   }
 
+  //Cambia la palabra
   void cambiarPalabra() async {
     palabra = await juego.obtenerPalabra();
     setState(() {});
   }
-
-  
-  
-
-// Widget _prueba() {
-
-  //   return FutureBuilder(
-  //     future: tarjetaProvider.cargarTarjetas(),
-  //     initialData: [],
-  //     builder: (BuildContext context, AsyncSnapshot snapshot) {
-
-  //       return ListView(
-  //         children: _listaTarjetas(snapshot.data) ,
-  //       );
-  //     },
-  //   );
-
-  // }
-
-  // List<Widget> _listaTarjetas(List<dynamic> data) {
-    
-  //   final List<Widget> opciones = [];
-
-  //   data.forEach((opt){
-
-  //     final widgetTemp = ListTile(
-  //       title: Text(opt['palabra_guarani']),
-  //       subtitle: Text(opt['descripcion']),
-  //       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue )
-  //     );
-
-  //     opciones..add(widgetTemp)
-  //             ..add(Divider());
-
-  //   });
-
-  //   return opciones;
-  // }
-
 
 
 }
