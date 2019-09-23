@@ -9,6 +9,8 @@ class ResultadosPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    double height = MediaQuery.of(context).size.height;
+
     return Scaffold(
         body: Container(
           decoration: BoxDecoration(
@@ -27,7 +29,7 @@ class ResultadosPage extends StatelessWidget {
                       ) ,),
                   ),
                   Container(
-                    height: 270.0,
+                    height: porcentaje(59.3, height) ,
                     child: ListView(
                       padding: EdgeInsets.only(top: 20.0),
                       children: mostrarResultados()
@@ -109,6 +111,10 @@ class ResultadosPage extends StatelessWidget {
 
     return result;
 
+  }
+
+  double porcentaje(double porcentaje, double valor){
+    return (porcentaje*valor) / 100;
   }
 
 
