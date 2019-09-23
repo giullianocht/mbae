@@ -44,9 +44,9 @@ class _InstruccionesState extends State<Instrucciones> {
                 ),
                 //padding:MainAxisAlignment.end,
                  padding:EdgeInsets.only(
-                  top: 300,
-                  left: 180,
-                  right: 180,
+                  top: 180,
+                  //left: 180,
+                  //right: 180,
 
                   ),
                 child:Column(
@@ -59,7 +59,7 @@ class _InstruccionesState extends State<Instrucciones> {
                           child: Text(
                             "Volver al Menu Principal",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.redAccent,
                               fontSize: 30,
                               //backgroundColor: Color(900),
                               fontStyle: FontStyle.italic,
@@ -67,15 +67,15 @@ class _InstruccionesState extends State<Instrucciones> {
                             ),
                           ),  
                           color:Color(900),
-                          textColor: Colors.white,
+                          textColor: Colors.redAccent,
                           splashColor: Colors.green,
                         ),
                         RaisedButton(
-                          onPressed: (){},
+                          onPressed: (){_leernuevo();},
                           child: Text(
                             "Volver a leer las Instrucciones",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.redAccent,
                               fontSize: 30,
                               backgroundColor: Color(900),
                               fontStyle: FontStyle.italic,
