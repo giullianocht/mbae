@@ -86,6 +86,10 @@ class _Juego{
       tarjeta['correcto'] = true;
     }
 
+    if(_resultados.contains(tarjeta)){
+      return;
+    }
+
     _resultados.add(tarjeta);
 
   }
