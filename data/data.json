@@ -22,9 +22,65 @@
             "img": "assets/img3.jpg"
         },
         {
-            "id": 4,
-            "palabra_guarani": "Revi",
-            "palabra_espanol": "Culo",
+            "id": 5,
+            "palabra_guarani": "Oiko",
+            "palabra_espanol": "Funciona",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 6,
+            "palabra_guarani": "Ojapo",
+            "palabra_espanol": "Hacer",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 7,
+            "palabra_guarani": "Luiso",
+            "palabra_espanol": "Mito Guarani",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 8,
+            "palabra_guarani": "Jagua",
+            "palabra_espanol": "Perro",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 9,
+            "palabra_guarani": "Mbarakaja",
+            "palabra_espanol": "Gato",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 10,
+            "palabra_guarani": "13 Tujuti",
+            "palabra_espanol": "Cancion guarani",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 11,
+            "palabra_guarani": "Vakapipopo",
+            "palabra_espanol": "Pelota",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 12,
+            "palabra_guarani": "Tembi'u",
+            "palabra_espanol": "Comida",
+            "descripcion": "Lorem Ipsum",
+            "img": "assets/img4.jpg"
+        },
+        {
+            "id": 13,
+            "palabra_guarani": "Jasy Jatere",
+            "palabra_espanol": "Mito Guarani",
             "descripcion": "Lorem Ipsum",
             "img": "assets/img4.jpg"
         }

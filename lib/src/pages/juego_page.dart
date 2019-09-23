@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
@@ -28,7 +29,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   // Timer para los 60 segundos
   Timer _timer;
-  int _start = 60;
+  int _start = 10;
 
   //Color
   Color background = Colors.yellow;
@@ -37,7 +38,8 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   bool bandera = true;
 
   //Palabra
-  String palabra = "mbae";
+  String palabra;
+
 
   void startTimer(int start) {
 
@@ -50,6 +52,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
         () {
           if (_start < 1) {
             _timer.cancel();
+            Navigator.pushReplacementNamed(context, 'resultados');
           } else {
             _start = _start - 1;
           }
@@ -59,8 +62,8 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   }
 
 
-
   _JuegoPageState(){
+    cambiarPalabra();
     startTimer(60);
     startAccelerometer();
   }

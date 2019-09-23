@@ -7,18 +7,18 @@ import 'package:flutter/services.dart' show rootBundle;
 
 class _Juego{
    
-  List<dynamic> tarjetas;
+  List<dynamic> _tarjetas;
   List<int> numeros;
-  List<dynamic> resultados;
+  List<dynamic> _resultados;
   int salidos;
-  Map<String,dynamic> currentTarjeta;
-  int cantPalabras = 4;
+  Map<String,dynamic> _currentTarjeta;
+  int cantPalabras = 13;
 
   _Juego(){
-    tarjetas = [];
+    _tarjetas = [];
     numeros = new List(50);
-    resultados = [];
-    currentTarjeta = {};
+    _resultados = [];
+    _currentTarjeta = {};
     this.salidos = 0;
     generarVector();
   }
@@ -27,9 +27,9 @@ class _Juego{
   Future<List<dynamic>> obtenerTarjetas () async {
     final data = await rootBundle.loadString('data/data.json');
     Map dataMap = json.decode(data);
-    tarjetas = dataMap['tarjetas'];
+    _tarjetas = dataMap['tarjetas'];
 
-    return tarjetas;
+    return _tarjetas;
   }
 
   //Genera los numeros del 1 hasta la cantidad de palabras
@@ -60,34 +60,39 @@ class _Juego{
   Future<String> obtenerPalabra() async{
     int id = -1;
 
-    if(tarjetas.length == 0){
-      tarjetas = await obtenerTarjetas();
+    if(_tarjetas.length == 0){
+      _tarjetas = await obtenerTarjetas();
     }
 
     id = obtenerNumero();
 
-    for(Map<String,dynamic> tar in tarjetas){
+    for(Map<String,dynamic> tar in _tarjetas){
       if(tar['id'] == id){
-        currentTarjeta = tar;
+        _currentTarjeta = tar;
       }
     }
 
-    return currentTarjeta['palabra_guarani'];
+    return _currentTarjeta['palabra_guarani'];
 
   }
 
   //Corrige la palabra
   void corregirPalabra({bool correcto}){
 
-    Map<String, dynamic> tarjeta = currentTarjeta;
+    Map<String, dynamic> tarjeta = _currentTarjeta;
     tarjeta['correcto'] = false;
 
     if(correcto){
       tarjeta['correcto'] = true;
     }
 
-    resultados.add(tarjeta);
+    _resultados.add(tarjeta);
 
+  }
+
+  //Obtener Resultados
+  List<dynamic> obtenerResultados(){
+    return _resultados; 
   }
 
   
