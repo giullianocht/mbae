@@ -86,7 +86,7 @@ class DevelopersInfo extends StatelessWidget {
                       ),
                     ),
                     ContactDeveloper("Nicolas Espinola  ",
-                        "https://www.instagram.com/giulliano_cht"),
+                        "https://www.instagram.com/nicoespinolab"),
                   ]))
                 ],
               ),
