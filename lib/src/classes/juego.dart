@@ -16,11 +16,16 @@ class _Juego{
 
   _Juego(){
     _tarjetas = [];
-    numeros = new List(50);
+    numeros = new List(26);
     _resultados = [];
     _currentTarjeta = {};
     this.salidos = 0;
     generarVector();
+  }
+
+  //Borrar datos
+  void borrar(){
+    salidos = 0;
   }
 
   //Obtiene los datos del json 
