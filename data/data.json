@@ -25,173 +25,164 @@
         },
         {
             "id": 4,
-            "palabra_guarani": "Yvyra",
-            "palabra_espanol": "Madera",
-            "descripcion": "Recurso natural",
-            "img": "assets/palabras/img4.png"
-        }
-        ,
-        {
-            "id": 5,
             "palabra_guarani": "Árbol",
             "palabra_espanol": "yvyrarakã",
             "descripcion": "Plata de gran porte",
+            "img": "assets/palabras/img4.png"
+        },
+        {
+            "id": 5,
+            "palabra_guarani": "Ñe'ẽmbyryha",
+            "palabra_espanol": "Teléfono",
+            "descripcion": "Aparato electrónico de comunicación",
             "img": "assets/palabras/img5.png"
         },
         {
             "id": 6,
-            "palabra_guarani": "Ñe'ẽmbyryha",
-            "palabra_espanol": "Teléfono",
-            "descripcion": "Aparato electrónico de comunicación",
+            "palabra_guarani": "Mbói",
+            "palabra_espanol": "Serpiente",
+            "descripcion": "Especie de reptil",
             "img": "assets/palabras/img6.png"
         },
         {
             "id": 7,
-            "palabra_guarani": "Mbói",
-            "palabra_espanol": "Serpiente",
-            "descripcion": "Especie de reptil",
+            "palabra_guarani": "Jagua",
+            "palabra_espanol": "Perro",
+            "descripcion": "Animal doméstico",
             "img": "assets/palabras/img7.png"
         },
         {
             "id": 8,
-            "palabra_guarani": "Jagua",
-            "palabra_espanol": "Perro",
-            "descripcion": "Animal doméstico",
+            "palabra_guarani": "Mbotyha",
+            "palabra_espanol": "Llave",
+            "descripcion": "Objeto utilizado para abrir cerradura",
             "img": "assets/palabras/img8.png"
         },
         {
             "id": 9,
-            "palabra_guarani": "Mbotyha",
-            "palabra_espanol": "Llave",
-            "descripcion": "Objeto utilizado para abrir cerradura",
+            "palabra_guarani": "Mbaraka",
+            "palabra_espanol": "Guitarra",
+            "descripcion": "Instrumento musical",
             "img": "assets/palabras/img9.png"
         },
         {
             "id": 10,
-            "palabra_guarani": "Mbaraka",
-            "palabra_espanol": "Guitarra",
-            "descripcion": "Instrumento musical",
+            "palabra_guarani": "Guata",
+            "palabra_espanol": "Caminar",
+            "descripcion": "Acción de caminar",
             "img": "assets/palabras/img10.png"
         },
         {
             "id": 11,
-            "palabra_guarani": "Guata",
-            "palabra_espanol": "Caminar",
-            "descripcion": "Acción de caminar",
+            "palabra_guarani": "Ita",
+            "palabra_espanol": "Piedra",
+            "descripcion": "Agregados de minerales",
             "img": "assets/palabras/img11.png"
         },
         {
             "id": 12,
-            "palabra_guarani": "Ita",
-            "palabra_espanol": "Piedra",
-            "descripcion": "Agregados de minerales",
+            "palabra_guarani": "Ysyryguasu",
+            "palabra_espanol": "Río",
+            "descripcion": "Corriente natural de agua",
             "img": "assets/palabras/img12.png"
         },
         {
             "id": 13,
-            "palabra_guarani": "Ysyryguasu",
-            "palabra_espanol": "Río",
-            "descripcion": "Corriente natural de agua",
+            "palabra_guarani": "Ryguasu",
+            "palabra_espanol": "Gallina",
+            "descripcion": "Especie de Ave",
             "img": "assets/palabras/img13.png"
         },
         {
             "id": 14,
-            "palabra_guarani": "Ryguasu",
-            "palabra_espanol": "Gallina",
-            "descripcion": "Especie de Ave",
+            "palabra_guarani": "Karai tuja",
+            "palabra_espanol": "Anciano",
+            "descripcion": "Persona de avanzada edad",
             "img": "assets/palabras/img14.png"
         },
         {
             "id": 15,
-            "palabra_guarani": "Karai tuja",
-            "palabra_espanol": "Anciano",
-            "descripcion": "Persona de avanzada edad",
+            "palabra_guarani": "Typycha",
+            "palabra_espanol": "Escoba",
+            "descripcion": "Elemento de limpieza",
             "img": "assets/palabras/img15.png"
         },
         {
             "id": 16,
-            "palabra_guarani": "Typycha",
-            "palabra_espanol": "Escoba",
-            "descripcion": "Elemento de limpieza",
-            "img": "assets/palabras/img16.png"
-        },
-        {
-            "id": 17,
             "palabra_guarani": "Ao",
             "palabra_espanol": "Ropa",
             "descripcion": "Prendas de vestir",
-            "img": "assets/palabras/img17.png"
-        },
-        
+            "img": "assets/palabras/img16.png"
+        },        
         {
-            "id": 18,
+            "id": 17,
             "palabra_guarani": "Apyka",
             "palabra_espanol": "Silla",
             "descripcion": "Mueble que sirve de asiento",
+            "img": "assets/palabras/img17.png"
+        },
+        {
+            "id": 18,
+            "palabra_guarani": "Tereré",
+            "palabra_espanol": "Tereré",
+            "descripcion": "Bebida refrescante",
             "img": "assets/palabras/img18.png"
         },
         {
             "id": 19,
-            "palabra_guarani": "Tereré",
-            "palabra_espanol": "Tereré",
-            "descripcion": "Bebida refrescante",
+            "palabra_guarani": "Sapatu",
+            "palabra_espanol": "Zapato",
+            "descripcion": "Accesorio de vestimenta",
             "img": "assets/palabras/img19.png"
         },
         {
             "id": 20,
-            "palabra_guarani": "Sapatu",
-            "palabra_espanol": "Zapato",
-            "descripcion": "Accesorio de vestimenta",
+            "palabra_guarani": "Po",
+            "palabra_espanol": "Mano",
+            "descripcion": "Parte del cuerpo",
             "img": "assets/palabras/img20.png"
         },
         {
             "id": 21,
-            "palabra_guarani": "Po",
-            "palabra_espanol": "Mano",
+            "palabra_guarani": "Akã",
+            "palabra_espanol": "Cabeza",
             "descripcion": "Parte del cuerpo",
             "img": "assets/palabras/img21.png"
         },
         {
             "id": 22,
-            "palabra_guarani": "Akã",
-            "palabra_espanol": "Cabeza",
-            "descripcion": "Parte del cuerpo",
+            "palabra_guarani": "Mbarakaja",
+            "palabra_espanol": "Gato",
+            "descripcion": "Animal domestico",
             "img": "assets/palabras/img22.png"
         },
         {
             "id": 23,
-            "palabra_guarani": "Mbarakaja",
-            "palabra_espanol": "Gato",
-            "descripcion": "Animal domestico",
+            "palabra_guarani": "Nambi",
+            "palabra_espanol": "Oreja",
+            "descripcion": "Parte del cuerpo",
             "img": "assets/palabras/img23.png"
         },
         {
             "id": 24,
-            "palabra_guarani": "Nambi",
-            "palabra_espanol": "Oreja",
+            "palabra_guarani": "Tĩ",
+            "palabra_espanol": "Nariz",
             "descripcion": "Parte del cuerpo",
             "img": "assets/palabras/img24.png"
         },
         {
             "id": 25,
-            "palabra_guarani": "Tĩ",
-            "palabra_espanol": "Nariz",
+            "palabra_guarani": "Tesa",
+            "palabra_espanol": "Ojo",
             "descripcion": "Parte del cuerpo",
             "img": "assets/palabras/img25.png"
         },
         {
             "id": 26,
-            "palabra_guarani": "Tesa",
-            "palabra_espanol": "Ojo",
-            "descripcion": "Parte del cuerpo",
-            "img": "assets/palabras/img26.png"
-        },
-        {
-            "id": 27,
             "palabra_guarani": "Mitã",
             "palabra_espanol": "Niño",
             "descripcion": "Dolor de cabeza",
-            "img": "assets/palabras/id_27.png"
+            "img": "assets/palabras/img26.png"
         }
     ]
 }
