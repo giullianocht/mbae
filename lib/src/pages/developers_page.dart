@@ -51,51 +51,45 @@ class DevelopersInfo extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
-              children: <Widget>[
-                Container(
-                  child: Column(
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Center(
-                          child: Text(
-                            "Desarrolladores",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      ContactDeveloper("Giulliano Albrecht  ",
-                          "https://www.instagram.com/giulliano_cht"),
-                      ContactDeveloper("Cristhian Ortellado",
-                          "https://www.instagram.com/cristhian_ortellado"),
-                      ContactDeveloper("Mario Gueyraud     ",
-                          "https://www.instagram.com/mariogyd"),
-                    ],
-                  ),
-                ),
-                Container(
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Container(
                     child: Column(
                       children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10.0),
-                    child: Center(
-                      child: Text(
-                        "Diseño",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
+                        Text(
+                          "Desarrolladores",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                          ),
                         ),
-                      ),
+                        ContactDeveloper("Giulliano Albrecht  ",
+                            "https://www.instagram.com/giulliano_cht"),
+                        ContactDeveloper("Cristhian Ortellado",
+                            "https://www.instagram.com/cristhian_ortellado"),
+                        ContactDeveloper("Mario Gueyraud     ",
+                            "https://www.instagram.com/mariogyd"),
+                      ],
                     ),
                   ),
-                  ContactDeveloper("Nicolas Espinola  ",
-                      "https://www.instagram.com/giulliano_cht"),
-                ]))
-              ],
+                  Container(
+                      child: Column(children: <Widget>[
+                    Text(
+                      "Diseño",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    ContactDeveloper("Nicolas Espinola  ",
+                        "https://www.instagram.com/giulliano_cht"),
+                  ]))
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
