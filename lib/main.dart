@@ -24,7 +24,6 @@ class MyRunApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: getApplicationRoutes(),
         initialRoute: '/',
-        // home: Scaffold(backgroundColor: Colors.white, body: Home())
         );
   }
 }
