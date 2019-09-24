@@ -56,45 +56,6 @@
             "id": 8,
             "palabra_guarani": "Jagua",
             "palabra_espanol": "Perro",
-<<<<<<< HEAD
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-        },
-        {
-            "id": 9,
-            "palabra_guarani": "Mbarakaja",
-            "palabra_espanol": "Gato",
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-        },
-        {
-            "id": 10,
-            "palabra_guarani": "13 Tujuti",
-            "palabra_espanol": "Cancion guarani",
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-        },
-        {
-            "id": 11,
-            "palabra_guarani": "Vakapipopo",
-            "palabra_espanol": "Pelota",
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-        },
-        {
-            "id": 12,
-            "palabra_guarani": "Tembi'u",
-            "palabra_espanol": "Comida",
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-        },
-        {
-            "id": 13,
-            "palabra_guarani": "Jasy Jatere",
-            "palabra_espanol": "Mito Guarani",
-            "descripcion": "Lorem Ipsum",
-            "img": "assets/img4.jpg"
-=======
             "descripcion": "Animal doméstico",
             "img": "assets/palabras/img8.png"
         },
@@ -231,7 +192,6 @@
             "palabra_espanol": "Niño",
             "descripcion": "Dolor de cabeza",
             "img": "assets/palabras/id_27.png"
->>>>>>> cristhian
         }
     ]
 }
