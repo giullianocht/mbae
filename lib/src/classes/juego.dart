@@ -25,7 +25,12 @@ class _Juego{
 
   //Borrar datos
   void borrar(){
-    salidos = 0;
+    _tarjetas = [];
+    numeros = new List(26);
+    _resultados = [];
+    _currentTarjeta = {};
+    this.salidos = 0;
+    generarVector();
   }
 
   //Obtiene los datos del json 

@@ -64,7 +64,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   _JuegoPageState(){
     juego.borrar();
     cambiarPalabra();
-    startTimer(20);
+    startTimer(60);
     startAccelerometer();
   }
 
