@@ -141,14 +141,16 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       }
 
     }else if(z <= -7){
-      background = Colors.redAccent;
+      
       Vibration.vibrate();
 
       if(bandera){
         contadorImagen++;
         if(contadorImagen == 1){
+          background = Colors.blueAccent;
           bandera = false;
         }else if(contadorImagen == 2){
+          background = Colors.redAccent;
           juego.corregirPalabra(correcto: false);
           bandera = false;
         }
