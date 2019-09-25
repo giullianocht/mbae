@@ -85,7 +85,7 @@ class DevelopersInfo extends StatelessWidget {
                         fontSize: 20.0,
                       ),
                     ),
-                    ContactDeveloper("Nicolas Espinola  ",
+                    ContactDeveloper("Nicolás Espínola  ",
                         "https://www.instagram.com/nicoespinolab"),
                   ]))
                 ],
