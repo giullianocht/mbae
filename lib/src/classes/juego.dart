@@ -15,12 +15,7 @@ class _Juego{
   int cantPalabras = 26;
 
   _Juego(){
-    _tarjetas = [];
-    numeros = new List(26);
-    _resultados = [];
-    _currentTarjeta = {};
-    this.salidos = 0;
-    generarVector();
+    borrar();
   }
 
   //Borrar datos
@@ -107,6 +102,11 @@ class _Juego{
   //Obtener Resultados
   List<dynamic> obtenerResultados(){
     return _resultados; 
+  }
+
+  //Obtener ruta de imagen
+  String obtenerRutaImagen(){
+    return _currentTarjeta['img'];
   }
 
   
