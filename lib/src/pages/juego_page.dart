@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
 //import 'package:mbae/src/providers/tarjeta_provider.dart';
 
+import 'package:mbae/src/classes/juego.dart';
 
 //Pagina Home
 class JuegoPage extends StatefulWidget{
@@ -27,10 +28,17 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   // Timer para los 60 segundos
   Timer _timer;
-  int _start = 60;
+  int _start = 10;
 
   //Color
   Color background = Colors.yellow;
+
+  //Bandera para controlar el cambio de estado
+  bool bandera = true;
+
+  //Palabra
+  String palabra;
+
 
   void startTimer(int start) {
 
@@ -43,6 +51,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
         () {
           if (_start < 1) {
             _timer.cancel();
+            Navigator.pushReplacementNamed(context, 'resultados');
           } else {
             _start = _start - 1;
           }
@@ -52,8 +61,9 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   }
 
 
-
   _JuegoPageState(){
+    juego.borrar();
+    cambiarPalabra();
     startTimer(60);
     startAccelerometer();
   }
@@ -70,7 +80,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
               Text("$_start",style: TextStyle(fontSize: 30),),
               Container(
                 margin: EdgeInsets.only(bottom: 100.0),
-                child: Text("Mbae",style: TextStyle(fontSize: 80),)
+                child: Text("$palabra",style: TextStyle(fontSize: 80),)
               )
             ],
           ),
@@ -115,12 +125,30 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     if(z >= 7) {
       background = Colors.lightGreenAccent;
       Vibration.vibrate();
+
+      if(bandera){
+        juego.corregirPalabra(correcto: true);
+        bandera = false;
+      }
+
     }else if(z <= -7){
       background = Colors.redAccent;
       Vibration.vibrate();
+
+      if(bandera){
+        juego.corregirPalabra(correcto: false);
+        bandera = false;
+      }
+
     }else{
       background = Colors.yellow; 
-      Vibration.cancel();     
+      Vibration.cancel();
+
+      if(!bandera){
+        cambiarPalabra();
+        bandera = true;
+      }
+
     }
 
     setState(() {});
@@ -158,51 +186,21 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     if(state == AppLifecycleState.paused){
       _timer.cancel();
       timerAccelerometer?.cancel();
-      accel?.cancel();
+      accel.pause();
       Vibration.cancel(); 
     }
     if(state == AppLifecycleState.resumed){
       startTimer(_start);
+      accel.resume();
       startAccelerometer();
     }
   }
-  
 
-// Widget _prueba() {
-
-  //   return FutureBuilder(
-  //     future: tarjetaProvider.cargarTarjetas(),
-  //     initialData: [],
-  //     builder: (BuildContext context, AsyncSnapshot snapshot) {
-
-  //       return ListView(
-  //         children: _listaTarjetas(snapshot.data) ,
-  //       );
-  //     },
-  //   );
-
-  // }
-
-  // List<Widget> _listaTarjetas(List<dynamic> data) {
-    
-  //   final List<Widget> opciones = [];
-
-  //   data.forEach((opt){
-
-  //     final widgetTemp = ListTile(
-  //       title: Text(opt['palabra_guarani']),
-  //       subtitle: Text(opt['descripcion']),
-  //       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue )
-  //     );
-
-  //     opciones..add(widgetTemp)
-  //             ..add(Divider());
-
-  //   });
-
-  //   return opciones;
-  // }
-
+  //Cambia la palabra
+  void cambiarPalabra() async {
+    palabra = await juego.obtenerPalabra();
+    setState(() {});
+  }
 
 
 }
