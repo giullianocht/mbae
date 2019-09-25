@@ -28,16 +28,18 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   // Timer para los 60 segundos
   Timer _timer;
-  int _start = 10;
+  int _start = 10, contadorImagen = 0;
 
   //Color
   Color background = Colors.yellow;
 
   //Bandera para controlar el cambio de estado
-  bool bandera = true;
+  bool bandera = true, mostrarImagen = false;
 
   //Palabra
   String palabra;
+
+  double height, width;
 
 
   void startTimer(int start) {
@@ -70,6 +72,9 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   @override
   Widget build(BuildContext context) {
+
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
     
     return Scaffold(
       backgroundColor: background,
@@ -79,8 +84,11 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
             children: <Widget>[
               Text("$_start",style: TextStyle(fontSize: 30),),
               Container(
-                margin: EdgeInsets.only(bottom: 100.0),
-                child: Text("$palabra",style: TextStyle(fontSize: 80),)
+                width: porcentaje(100, width) ,
+                height: porcentaje(60, height),
+                // margin: EdgeInsets.only(bottom: 100.0),
+                child: mostrarImagen ? imagen() : texto()
+                // child: imagen()
               )
             ],
           ),
@@ -127,17 +135,25 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       Vibration.vibrate();
 
       if(bandera){
+        contadorImagen = 2;
         juego.corregirPalabra(correcto: true);
         bandera = false;
       }
 
     }else if(z <= -7){
-      background = Colors.redAccent;
+      
       Vibration.vibrate();
 
       if(bandera){
-        juego.corregirPalabra(correcto: false);
-        bandera = false;
+        contadorImagen++;
+        if(contadorImagen == 1){
+          background = Colors.blueAccent;
+          bandera = false;
+        }else if(contadorImagen == 2){
+          background = Colors.redAccent;
+          juego.corregirPalabra(correcto: false);
+          bandera = false;
+        }
       }
 
     }else{
@@ -145,8 +161,16 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       Vibration.cancel();
 
       if(!bandera){
-        cambiarPalabra();
-        bandera = true;
+        if(contadorImagen == 1){
+          mostrarImagen = true;
+          bandera = true;
+        }else if(contadorImagen == 2){
+          mostrarImagen = false;
+          cambiarPalabra();
+          // cambiarPalabra();
+          bandera = true;
+          contadorImagen = 0;
+        }
       }
 
     }
@@ -202,5 +226,26 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     setState(() {});
   }
 
+  //Muestra imagen
+  Widget imagen(){
+    String pathImg = juego.obtenerRutaImagen();
+
+    return Center(child: Image.asset(pathImg, fit: BoxFit.fill,));
+  }
+
+
+  //Muestra palabra
+  Widget texto(){
+    return Center(
+      child: Container(
+        margin: EdgeInsets.only(bottom: 90.0),
+        child: Text("$palabra",style: TextStyle(fontSize: 80),)
+      )
+      );
+  }
+
+  double porcentaje(double porcentaje, double valor){
+    return (porcentaje*valor) / 100;
+  }
 
 }

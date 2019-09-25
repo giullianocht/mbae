@@ -4,7 +4,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.verdeprincipal,
+      backgroundColor: Colors.white,
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
