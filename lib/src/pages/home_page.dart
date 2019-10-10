@@ -8,67 +8,71 @@ class Home extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/inicio.jpg"), fit: BoxFit.cover)),
+                image: AssetImage("assets/inicio/home_principal.png"),
+                fit: BoxFit.fill)),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Center(
-                child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  "¿ MBA'E ?",
-                  style: TextStyle(
-                    fontSize: 50.0,
-                    fontFamily: "HeyAugust",
-                    color: Colors.redAccent,
-                  ),
-                ),
-                Padding(padding: EdgeInsets.all(35.0)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  //crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    //Boton de Jugar
-                    RaisedButton(
+            Padding(
+              padding: const EdgeInsets.all(75.0),
+              child: Center(
+                  child: Column(
+                children: <Widget>[
+                  Text(
+                    "¿ MBA'E ?",
+                    style: TextStyle(
+                      fontSize: 50.0,
+                      fontFamily: "HeyAugust",
                       color: Colors.redAccent,
-                      textColor: Colors.white,
-                      child: Text(
-                        "Jugar",
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          fontFamily: "HeyAugust",
-                        ),
-                      ),
-                      onPressed: () {
-                        print("Boton de Jugar Presionado");
-                        Navigator.pushReplacementNamed(context, 'preparacion');
-                      },
-                      splashColor: Colors.white,
                     ),
-                    //Espacion entre ellos de 20 pixeles
-                    Padding(padding: EdgeInsets.all(20.0)),
-                    //Boton de Intrucciones
-                    RaisedButton(
-                      child: Text(
-                        "Instrucciones",
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          fontFamily: "HeyAugust",
+                  ),
+                  Padding(padding: EdgeInsets.symmetric(vertical: 20.0)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    //crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      //Boton de Jugar
+                      RaisedButton(
+                        color: Colors.redAccent,
+                        textColor: Colors.white,
+                        child: Text(
+                          "Jugar",
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontFamily: "HeyAugust",
+                          ),
                         ),
+                        onPressed: () {
+                          print("Boton de Jugar Presionado");
+                          Navigator.pushReplacementNamed(
+                              context, 'preparacion');
+                        },
+                        splashColor: Colors.white,
                       ),
-                      color: Colors.redAccent,
-                      textColor: Colors.white,
-                      onPressed: () {
-                        print("Boton de Instrucciones Presionado");
-                        Navigator.pushNamed(context, 'instrucciones');
-                      },
-                      splashColor: Colors.white,
-                    )
-                  ],
-                ),
-              ],
-            )),
+                      //Espacion entre ellos de 20 pixeles
+                      Padding(padding: EdgeInsets.all(20.0)),
+                      //Boton de Intrucciones
+                      RaisedButton(
+                        child: Text(
+                          "Instrucciones",
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontFamily: "HeyAugust",
+                          ),
+                        ),
+                        color: Colors.redAccent,
+                        textColor: Colors.white,
+                        onPressed: () {
+                          print("Boton de Instrucciones Presionado");
+                          Navigator.pushNamed(context, 'instrucciones');
+                        },
+                        splashColor: Colors.white,
+                      )
+                    ],
+                  ),
+                ],
+              )),
+            ),
           ],
         ),
       ),
