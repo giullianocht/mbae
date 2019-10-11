@@ -53,6 +53,7 @@ flutter:
    - data/data.json
    - assets/
    - assets/palabras/
+   - assets/informacion/
    - assets/inicio/
    - assets/sonidos/
   # assets:
