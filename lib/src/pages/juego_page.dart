@@ -66,6 +66,14 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
             Navigator.pushReplacementNamed(context, 'resultados');
           } else {
             _start = _start - 1;
+            if(_start == 10){
+              _assetsAudioPlayer.open(AssetsAudio(
+                asset: "segundos.mp3",
+                folder: "assets/",
+              ));
+
+              _assetsAudioPlayer.playOrPause();
+            }
           }
         },
       ),
