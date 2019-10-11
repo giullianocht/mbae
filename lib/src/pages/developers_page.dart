@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mbae/src/widgets/contact_developer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-TextStyle defaultStyle = TextStyle(fontSize: 17);
+TextStyle defaultStyle = TextStyle(fontSize: 17, fontFamily: "HeyAugust");
 
 class DevelopersInfo extends StatelessWidget {
   @override
@@ -30,6 +30,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
+                    fontFamily: "HeyAugust",
                   ),
                 ),
               ),
