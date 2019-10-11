@@ -95,7 +95,7 @@
         },
         {
             "id": 14,
-            "palabra_guarani": "Karai tuja",
+            "palabra_guarani": "Karai Tuja",
             "palabra_espanol": "Anciano",
             "descripcion": "Persona de avanzada edad",
             "img": "assets/palabras/img14.png"
@@ -277,7 +277,7 @@
         },
         {
             "id": 40,
-            "palabra_guarani": "Temimbo`e",
+            "palabra_guarani": "Temimboʼe",
             "palabra_espanol": "Aprendiz",
             "descripcion": "Persona que esta aprendiendo",
             "img": "assets/palabras/img40.png"
