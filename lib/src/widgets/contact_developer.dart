@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-TextStyle defaultStyle = TextStyle(fontSize: 17);
+TextStyle defaultStyle = TextStyle(fontSize: 17, fontFamily: "HeyAugust");
 
 class ContactDeveloper extends StatelessWidget {
   final String _nombre;

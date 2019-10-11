@@ -65,6 +65,7 @@ class DevelopersInfo extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,
+                            fontFamily: "HeyAugust",
                           ),
                         ),
                         ContactDeveloper("Giulliano Albrecht  ",
@@ -83,6 +84,7 @@ class DevelopersInfo extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
+                        fontFamily: "HeyAugust",
                       ),
                     ),
                     ContactDeveloper("Nicolás Espínola  ",
@@ -99,6 +101,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
+                    fontFamily: "HeyAugust",
                   ),
                 ),
               ),
@@ -110,6 +113,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 17.0,
+                    fontFamily: "HeyAugust",
                   ),
                 ),
                 onTap: () {
