@@ -6,6 +6,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
+        // Imagen de Fondo
         decoration: BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/inicio/home_principal.png"),
@@ -29,8 +30,9 @@ class Home extends StatelessWidget {
                   Padding(padding: EdgeInsets.symmetric(vertical: 20.0)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    //crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+                      //Imagen del ninho
+                      Image.asset("assets/inicio/nino.png"),
                       //Boton de Jugar
                       RaisedButton(
                         color: Colors.redAccent,
