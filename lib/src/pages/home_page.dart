@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
                   image: AssetImage("assets/inicio/home_principal.png"),
                   fit: BoxFit.fill)),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Center(
                   child: Column(
