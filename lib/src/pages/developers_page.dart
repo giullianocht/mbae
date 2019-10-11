@@ -2,7 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:mbae/src/widgets/contact_developer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-TextStyle defaultStyle = TextStyle(fontSize: 17, fontFamily: "HeyAugust");
+TextStyle defaultStyle = TextStyle(
+  fontSize: 20,
+  fontFamily: "HeyAugust",
+  shadows: <Shadow>[
+    Shadow(
+      offset: Offset(1.0, 1.0),
+      blurRadius: 5.0,
+      color: Colors.black,
+    ),
+    Shadow(
+      offset: Offset(1.0, 1.0),
+      blurRadius: 5.0,
+      color: Colors.green,
+    ),
+  ],
+);
 
 class DevelopersInfo extends StatelessWidget {
   @override
@@ -32,8 +47,20 @@ class DevelopersInfo extends StatelessWidget {
                   "¿ Mba'e ?",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20.0,
+                    fontSize: 30.0,
                     fontFamily: "HeyAugust",
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.black,
+                      ),
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.green,
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -56,7 +83,7 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,15 +95,27 @@ class DevelopersInfo extends StatelessWidget {
                           "Desarrolladores",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 28.0,
                             fontFamily: "HeyAugust",
+                            shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.black,
+                      ),
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.green,
+                      ),
+                    ],
                           ),
                         ),
-                        ContactDeveloper("Giulliano Albrecht  ",
+                        ContactDeveloper("Giulliano Albrecht ",
                             "https://www.instagram.com/giulliano_cht"),
                         ContactDeveloper("Cristhian Ortellado",
                             "https://www.instagram.com/cristhian_ortellado"),
-                        ContactDeveloper("Mario Gueyraud     ",
+                        ContactDeveloper("Mario Gueyraud   ",
                             "https://www.instagram.com/mariogyd"),
                       ],
                     ),
@@ -87,8 +126,20 @@ class DevelopersInfo extends StatelessWidget {
                       "Diseño",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20.0,
+                        fontSize: 25.0,
                         fontFamily: "HeyAugust",
+                        shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.black,
+                      ),
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.green,
+                      ),
+                    ],
                       ),
                     ),
                     ContactDeveloper("Nicolás Espínola  ",
@@ -98,14 +149,26 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
               child: Center(
                 child: Text(
                   "Contacto",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20.0,
+                    fontSize: 25.0,
                     fontFamily: "HeyAugust",
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.black,
+                      ),
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.green,
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -116,8 +179,20 @@ class DevelopersInfo extends StatelessWidget {
                   "mbae.app@gmail.com",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 17.0,
+                    fontSize: 25.0,
                     fontFamily: "HeyAugust",
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.black,
+                      ),
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 5.0,
+                        color: Colors.green,
+                      ),
+                    ],
                   ),
                 ),
                 onTap: () {
