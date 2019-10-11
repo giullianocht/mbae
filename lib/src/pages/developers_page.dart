@@ -23,7 +23,6 @@ class DevelopersInfo extends StatelessWidget {
             image: DecorationImage(
                 image: AssetImage("assets/informacion/fondo_informacion.png"),
                 fit: BoxFit.fill)),
-        color: Colors.transparent,
         child: Column(
           children: <Widget>[
             Center(
