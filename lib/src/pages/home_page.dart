@@ -31,8 +31,6 @@ class Home extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //Imagen del ninho
-                      Image.asset("assets/inicio/nino.png"),
                       //Boton de Jugar
                       RaisedButton(
                         color: Colors.redAccent,
