@@ -50,7 +50,7 @@ class ContactDeveloper extends StatelessWidget {
                   child: GestureDetector(
                     child: Icon(
                       FontAwesomeIcons.instagram,
-                      color: Colors.purpleAccent,
+                      color: Colors.purple,
                     ),
                     onTap: () {
                       launch(_pathinstagram);
