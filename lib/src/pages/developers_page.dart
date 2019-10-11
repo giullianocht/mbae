@@ -75,7 +75,11 @@ class DevelopersInfo extends StatelessWidget {
                     children: <TextSpan>[
                       TextSpan(
                         text:
-                            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            " \t\tEs un juego para dos o mas personas que buscan divertirse y aprender palabras cotidianas en guarani, consiste en adivinar la palabra mediante mimicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.",
+                      ),
+                      TextSpan(
+                        text:
+                            "\n \t\tEl juego se desarrollo para el concurso de aplicaciones moviles en la Exposicion , Tecnologia y Ciencias 2019 de la Facultad Politecnica de la Universidad Nacional de Asuncion con el lema Ñamopua Ñande Ñee.",
                       )
                     ],
                   ),
@@ -83,7 +87,7 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(0.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,25 +102,32 @@ class DevelopersInfo extends StatelessWidget {
                             fontSize: 28.0,
                             fontFamily: "HeyAugust",
                             shadows: <Shadow>[
-                      Shadow(
-                        offset: Offset(1.0, 1.0),
-                        blurRadius: 5.0,
-                        color: Colors.black,
-                      ),
-                      Shadow(
-                        offset: Offset(1.0, 1.0),
-                        blurRadius: 5.0,
-                        color: Colors.green,
-                      ),
-                    ],
+                              Shadow(
+                                offset: Offset(1.0, 1.0),
+                                blurRadius: 5.0,
+                                color: Colors.black,
+                              ),
+                              Shadow(
+                                offset: Offset(1.0, 1.0),
+                                blurRadius: 5.0,
+                                color: Colors.green,
+                              ),
+                            ],
                           ),
                         ),
-                        ContactDeveloper("Giulliano Albrecht ",
-                            "https://www.instagram.com/giulliano_cht"),
-                        ContactDeveloper("Cristhian Ortellado",
-                            "https://www.instagram.com/cristhian_ortellado"),
-                        ContactDeveloper("Mario Gueyraud   ",
-                            "https://www.instagram.com/mariogyd"),
+                        Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              ContactDeveloper("Giulliano Albrecht",
+                                  "https://www.instagram.com/giulliano_cht"),
+                              ContactDeveloper("Cristhian Ortellado",
+                                  "https://www.instagram.com/cristhian_ortellado"),
+                              ContactDeveloper("Mario Gueyraud",
+                                  "https://www.instagram.com/mariogyd"),
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
@@ -129,27 +140,27 @@ class DevelopersInfo extends StatelessWidget {
                         fontSize: 25.0,
                         fontFamily: "HeyAugust",
                         shadows: <Shadow>[
-                      Shadow(
-                        offset: Offset(1.0, 1.0),
-                        blurRadius: 5.0,
-                        color: Colors.black,
-                      ),
-                      Shadow(
-                        offset: Offset(1.0, 1.0),
-                        blurRadius: 5.0,
-                        color: Colors.green,
-                      ),
-                    ],
+                          Shadow(
+                            offset: Offset(1.0, 1.0),
+                            blurRadius: 5.0,
+                            color: Colors.black,
+                          ),
+                          Shadow(
+                            offset: Offset(1.0, 1.0),
+                            blurRadius: 5.0,
+                            color: Colors.green,
+                          ),
+                        ],
                       ),
                     ),
-                    ContactDeveloper("Nicolás Espínola  ",
+                    ContactDeveloper("Nicolás Espínola",
                         "https://www.instagram.com/nicoespinolab"),
                   ]))
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5.0),
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
               child: Center(
                 child: Text(
                   "Contacto",

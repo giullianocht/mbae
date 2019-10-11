@@ -33,6 +33,7 @@ class ContactDeveloper extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 3.0),
           child: Container(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Column(
                   children: <Widget>[
@@ -45,8 +46,8 @@ class ContactDeveloper extends StatelessWidget {
                     ),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
                   child: GestureDetector(
                     child: Icon(
                       FontAwesomeIcons.instagram,
