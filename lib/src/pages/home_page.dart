@@ -6,17 +6,15 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-        // Imagen de Fondo
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/inicio/home_principal.png"),
-                fit: BoxFit.fill)),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(75.0),
-              child: Center(
+          // Imagen de Fondo
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/inicio/home_principal.png"),
+                  fit: BoxFit.fill)),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Center(
                   child: Column(
                 children: <Widget>[
                   Text(
@@ -27,7 +25,7 @@ class Home extends StatelessWidget {
                       color: Colors.redAccent,
                     ),
                   ),
-                  Padding(padding: EdgeInsets.symmetric(vertical: 20.0)),
+                  Padding(padding: EdgeInsets.all(35.0)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -72,10 +70,9 @@ class Home extends StatelessWidget {
                   ),
                 ],
               )),
-            ),
-          ],
-        ),
-      ),
+            ],
+          )),
+
       // Boton flotante de Informacion
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.info, size: 25.0, color: Colors.white),
