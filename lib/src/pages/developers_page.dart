@@ -12,7 +12,7 @@ class DevelopersInfo extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.home, size: 25.0, color: Colors.white),
         elevation: 50.0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         onPressed: () {
           print("Boton Flotante presionado");
           Navigator.pop(context);
