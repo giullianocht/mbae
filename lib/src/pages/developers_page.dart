@@ -42,6 +42,7 @@ class DevelopersInfo extends StatelessWidget {
           children: <Widget>[
             Center(
               child: Container(
+                //Aca
                 margin: const EdgeInsets.only(bottom: 5.0, top: 20.0),
                 child: Text(
                   "¿ Mba'e ?",
@@ -66,6 +67,7 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
+              //Aca
               padding: const EdgeInsets.symmetric(horizontal: 60.0),
               child: Container(
                 child: RichText(
@@ -87,8 +89,10 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
+              //Aca
               padding: const EdgeInsets.all(0.0),
               child: Row(
+                //Aca
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -117,6 +121,7 @@ class DevelopersInfo extends StatelessWidget {
                         ),
                         Container(
                           child: Column(
+                            //Aca
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               ContactDeveloper("Giulliano Albrecht",
@@ -160,6 +165,7 @@ class DevelopersInfo extends StatelessWidget {
               ),
             ),
             Padding(
+              //aca
               padding: const EdgeInsets.symmetric(vertical: 0.0),
               child: Center(
                 child: Text(
