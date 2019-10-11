@@ -8,11 +8,11 @@ class DevelopersInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.home, size: 25.0, color: Colors.white),
         elevation: 50.0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         onPressed: () {
           print("Boton Flotante presionado");
           Navigator.pop(context);
