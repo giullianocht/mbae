@@ -6,7 +6,7 @@ import 'package:mbae/src/pages/juego_page.dart';
 import 'package:mbae/src/pages/preparacion_page.dart';
 import 'package:mbae/src/pages/resultados_page.dart';
 
-Map <String, WidgetBuilder> getApplicationRoutes(){
+Map<String, WidgetBuilder> getApplicationRoutes() {
   return <String, WidgetBuilder>{
     'preparacion': (BuildContext context) => PreparationPage(),
     'juego': (BuildContext context) => JuegoPage(),
