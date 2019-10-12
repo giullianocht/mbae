@@ -262,7 +262,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     return Center(
       child: Container(
         margin: EdgeInsets.only(bottom: 90.0),
-        child: Text("$palabra",style: TextStyle(fontSize: 80),)
+        child: Text("$palabra",style: TextStyle(fontSize: 80, fontFamily: 'Sunday'),)
       )
       );
   }

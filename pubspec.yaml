@@ -50,6 +50,9 @@ flutter:
     - family: HeyAugust
       fonts:
         - asset: fonts/HeyAugust.ttf
+    - family: Sunday
+      fonts:
+        - asset: fonts/Sunday.ttf
   # To add assets to your application, add an assets section, like this:
   assets:
    - data/data.json

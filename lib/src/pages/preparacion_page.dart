@@ -59,6 +59,7 @@ class _PreparationPageState extends State<PreparationPage> {
             Text(
               "Colocar el dispositivo en la frente",
               style: TextStyle(
+                fontFamily: 'Sunday',
                 fontSize: 35.0,
               ),
             ),
@@ -66,6 +67,7 @@ class _PreparationPageState extends State<PreparationPage> {
               "el juego comienza en",
               style: TextStyle(
                 fontSize: 35.0,
+                fontFamily: 'Sunday'
               ),
             ),
             Padding(
