@@ -103,13 +103,6 @@ class _InstruccionesState extends State<Instrucciones> {
     );
   }
   
-  void _leernuevo(){
-    pagina.jumpToPage(0);
-  }
-  void _salir() {
-    Navigator.pop(context);
-  }
-
   double porcentaje(double porcentaje, double valor){
     return (porcentaje*valor) / 100;
   }
