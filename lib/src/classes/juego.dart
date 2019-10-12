@@ -12,7 +12,7 @@ class _Juego{
   List<dynamic> _resultados;
   int salidos;
   Map<String,dynamic> _currentTarjeta;
-  int cantPalabras = 26;
+  int cantPalabras = 70;
 
   _Juego(){
     borrar();
