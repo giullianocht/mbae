@@ -25,8 +25,8 @@
         },
         {
             "id": 4,
-            "palabra_guarani": "Árbol",
-            "palabra_espanol": "yvyrarakã",
+            "palabra_guarani": "Yvyrarakã",
+            "palabra_espanol": "Árbol",
             "descripcion": "Plata de gran porte",
             "img": "assets/palabras/img4.png"
         },
@@ -95,7 +95,7 @@
         },
         {
             "id": 14,
-            "palabra_guarani": "Karai tuja",
+            "palabra_guarani": "Karai Tuja",
             "palabra_espanol": "Anciano",
             "descripcion": "Persona de avanzada edad",
             "img": "assets/palabras/img14.png"
@@ -125,7 +125,7 @@
             "id": 18,
             "palabra_guarani": "Tereré",
             "palabra_espanol": "Tereré",
-            "descripcion": "Bebida refrescante",
+            "descripcion": "Bebida refrescante paraguaya",
             "img": "assets/palabras/img18.png"
         },
         {
@@ -183,6 +183,314 @@
             "palabra_espanol": "Niño",
             "descripcion": "Dolor de cabeza",
             "img": "assets/palabras/img26.png"
+        },
+        {
+            "id": 27,
+            "palabra_guarani": "Teju Jagua",
+            "palabra_espanol": "Personaje de la mitologia guarani",
+            "descripcion": "Personaje de la mitologia guarani",
+            "img": "assets/palabras/img27.png"
+        },
+        {
+            "id": 28,
+            "palabra_guarani": "Jasy Jatere",
+            "palabra_espanol": "Personaje de la mitologia guarani",
+            "descripcion": "Personaje de la mitologia guarani",
+            "img": "assets/palabras/img28.png"
+        },
+        {
+            "id": 29,
+            "palabra_guarani": "Kurupi",
+            "palabra_espanol": "Personaje de la mitologia guarani",
+            "descripcion": "Personaje de la mitologia guarani",
+            "img": "assets/palabras/img29.png"
+        },
+        {
+            "id": 30,
+            "palabra_guarani": "Luisón",
+            "palabra_espanol": "Personaje de la mitologia guarani",
+            "descripcion": "Personaje de la mitologia guarani",
+            "img": "assets/palabras/img30.png"
+        },
+        {
+            "id": 31,
+            "palabra_guarani": "Pombero",
+            "palabra_espanol": "Personaje de la mitologia guarani",
+            "descripcion": "Personaje de la mitologia guarania",
+            "img": "assets/palabras/img31.png"
+        },
+        {
+            "id": 32,
+            "palabra_guarani": "Yvoty",
+            "palabra_espanol": "Flor",
+            "descripcion": "Planta",
+            "img": "assets/palabras/img32.png"
+        },
+        {
+            "id": 33,
+            "palabra_guarani": "Yvytu",
+            "palabra_espanol": "Viento",
+            "descripcion": "Movimiento en masa del aire de acuerdo con las diferencias de presión atmosférica",
+            "img": "assets/palabras/img33.png"
+        },
+        {
+            "id": 34,
+            "palabra_guarani": "Achegety",
+            "palabra_espanol": "Abecedario",
+            "descripcion": "Conjunto de letras de un idioma",
+            "img": "assets/palabras/img34.png"
+        },
+        {
+            "id": 35,
+            "palabra_guarani": "Sáko",
+            "palabra_espanol": "Abrigo",
+            "descripcion": "Ropa para calentar el cuerpo",
+            "img": "assets/palabras/img35.png"
+        },
+        {
+            "id": 36,
+            "palabra_guarani": "Ñandy",
+            "palabra_espanol": "Aceite",
+            "descripcion": "Liquido",
+            "img": "assets/palabras/img36.png"
+        },
+        {
+            "id": 37,
+            "palabra_guarani": "Maravichu",
+            "palabra_espanol": "Adivinanza",
+            "descripcion": "Acertijo",
+            "img": "assets/palabras/img37.png"
+        },
+        {
+            "id": 38,
+            "palabra_guarani": "Kaña",
+            "palabra_espanol": "Alcohol",
+            "descripcion": "Bebida festiva",
+            "img": "assets/palabras/img38.png"
+        },
+        {
+            "id": 39,
+            "palabra_guarani": "Piripipi",
+            "palabra_espanol": "Ametralladora",
+            "descripcion": "Arma de grueso calibre",
+            "img": "assets/palabras/img39.png"
+        },
+        {
+            "id": 40,
+            "palabra_guarani": "Temimboʼe",
+            "palabra_espanol": "Aprendiz",
+            "descripcion": "Persona que esta aprendiendo",
+            "img": "assets/palabras/img40.png"
+        },
+        {
+            "id": 41,
+            "palabra_guarani": "Jejuka",
+            "palabra_espanol": "Asesinato",
+            "descripcion": "Dolor de cabeza",
+            "img": "assets/palabras/img41.png"
+        },
+        {
+            "id": 42,
+            "palabra_guarani": "Kamiʼõ",
+            "palabra_espanol": "Bus",
+            "descripcion": "Vehiculo para transporte de pasajeros",
+            "img": "assets/palabras/img42.png"
+        },
+        {
+            "id": 43,
+            "palabra_guarani": "Pirapire",
+            "palabra_espanol": "Dinero",
+            "descripcion": "Divisas",
+            "img": "assets/palabras/img43.png"
+        },
+        {
+            "id": 44,
+            "palabra_guarani": "Pirapire Ryru",
+            "palabra_espanol": "Billetera",
+            "descripcion": "Accesorio para guardar el dinero",
+            "img": "assets/palabras/img44.png"
+        },
+        {
+            "id": 45,
+            "palabra_guarani": "Hendyva Vuku",
+            "palabra_espanol": "Barbudo",
+            "descripcion": "Persona con muchos bellos faciales",
+            "img": "assets/palabras/img45.png"
+        },
+        {
+            "id": 46,
+            "palabra_guarani": "Añamemby",
+            "palabra_espanol": "Bandido",
+            "descripcion": "Persona que toma lo que no es suyo",
+            "img": "assets/palabras/img46.png"
+        },
+        {
+            "id": 47,
+            "palabra_guarani": "Kure",
+            "palabra_espanol": "Cerdo",
+            "descripcion": "Animal",
+            "img": "assets/palabras/img47.png"
+        },
+        {
+            "id": 48,
+            "palabra_guarani": "Pyhare",
+            "palabra_espanol": "Noche",
+            "descripcion": "Horario pasado de las 18 horas",
+            "img": "assets/palabras/img48.png"
+        },
+        {
+            "id": 49,
+            "palabra_guarani": "Mitã Kuña",
+            "palabra_espanol": "Niña",
+            "descripcion": "Dolor de cabeza",
+            "img": "assets/palabras/img49.png"
+        },
+        {
+            "id": 50,
+            "palabra_guarani": "Ñemonda",
+            "palabra_espanol": "Robar",
+            "descripcion": "Accion de Robar",
+            "img": "assets/palabras/img50.png"
+        },
+        {
+            "id": 51,
+            "palabra_guarani": "Ñembovyvy",
+            "palabra_espanol": "Costurar",
+            "descripcion": "Acción de unir",
+            "img": "assets/palabras/img51.png"
+        },
+        {
+            "id": 52,
+            "palabra_guarani": "Ñepytyvõ",
+            "palabra_espanol": "Ayudar",
+            "descripcion": "Voluntariado",
+            "img": "assets/palabras/img52.png"
+        },
+        {
+            "id": 53,
+            "palabra_guarani": "Mboʼehao",
+            "palabra_espanol": "Escuela",
+            "descripcion": "Lugar donde se enseña",
+            "img": "assets/palabras/img53.png"
+        },
+        {
+            "id": 54,
+            "palabra_guarani": "Kyse",
+            "palabra_espanol": "Cuchillo",
+            "descripcion": "Arma Blanca",
+            "img": "assets/palabras/img54.png"
+        },
+        {
+            "id": 55,
+            "palabra_guarani": "Poha Ñemuha",
+            "palabra_espanol": "Farmacia",
+            "descripcion": "Negocio que vende medicinas",
+            "img": "assets/palabras/img55.png"
+        },
+        {
+            "id": 56,
+            "palabra_guarani": "Póra",
+            "palabra_espanol": "Fantasma",
+            "descripcion": "Ser de otra dimension",
+            "img": "assets/palabras/img56.png"
+        },
+        {
+            "id": 57,
+            "palabra_guarani": "Tata",
+            "palabra_espanol": "Fuego",
+            "descripcion": "Partículas o moléculas incandescentes de materia combustible, capaces de emitir calor y luz visible",
+            "img": "assets/palabras/img57.png"
+        },
+        {
+            "id": 58,
+            "palabra_guarani": "Tiri",
+            "palabra_espanol": "Fisura",
+            "descripcion": "Abertura alargada y con muy poca separación entre sus bordes",
+            "img": "assets/palabras/img58.png"
+        },
+        {
+            "id": 59,
+            "palabra_guarani": "Tatakua",
+            "palabra_espanol": "Horno",
+            "descripcion": "Es un dispositivo que genera calor y que lo mantiene dentro de un compartimiento cerrado",
+            "img": "assets/palabras/img59.png"
+        },
+        {
+            "id": 60,
+            "palabra_guarani": "Mbarete",
+            "palabra_espanol": "Fuerte",
+            "descripcion": "Capacidad física para realizar un trabajo pesado",
+            "img": "assets/palabras/img60.png"
+        },
+        {
+            "id": 61,
+            "palabra_guarani": "Japita",
+            "palabra_espanol": "Fumar",
+            "descripcion": "Aspirar y despedir el humo producido por la combustión del tabaco o de otra sustancia herbácea",
+            "img": "assets/palabras/img61.png"
+        },
+        {
+            "id": 62,
+            "palabra_guarani": "Jasy",
+            "palabra_espanol": "Luna",
+            "descripcion": "Satélite natural de la Tierra",
+            "img": "assets/palabras/img62.png"
+        },
+        {
+            "id": 63,
+            "palabra_guarani": "Kaigue",
+            "palabra_espanol": "Haragan",
+            "descripcion": "Persona que tiene poca disposición para hacer algo",
+            "img": "assets/palabras/img63.png"
+        },
+        {
+            "id": 64,
+            "palabra_guarani": "Yakare",
+            "palabra_espanol": "Cocodrilo",
+            "descripcion": "Animal",
+            "img": "assets/palabras/img64.png"
+        },
+        {
+            "id": 65,
+            "palabra_guarani": "Mombyry",
+            "palabra_espanol": "Lejos",
+            "descripcion": "Mucha distancia",
+            "img": "assets/palabras/img65.png"
+        },
+        {
+            "id": 66,
+            "palabra_guarani": "Tesa Poʼe",
+            "palabra_espanol": "Serruchero",
+            "descripcion": "Persona que roba novias",
+            "img": "assets/palabras/img66.png"
+        },
+        {
+            "id": 67,
+            "palabra_guarani": "Kamby",
+            "palabra_espanol": "Leche",
+            "descripcion": "Bebida de origen animal",
+            "img": "assets/palabras/img67.png"
+        },
+        {
+            "id": 68,
+            "palabra_guarani": "Ñorairõ",
+            "palabra_espanol": "Pelear",
+            "descripcion": "Intentar hasta el final",
+            "img": "assets/palabras/img68.png"
+        },
+        {
+            "id": 69,
+            "palabra_guarani": "Ñemboʼe",
+            "palabra_espanol": "Rezar",
+            "descripcion": "Acción de orar",
+            "img": "assets/palabras/img69.png"
+        },
+        {
+            "id": 70,
+            "palabra_guarani": "Avakachi",
+            "palabra_espanol": "Piña",
+            "descripcion": "Deliciosa fruta tropical",
+            "img": "assets/palabras/img70.png"
         }
     ]
 }

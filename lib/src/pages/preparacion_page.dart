@@ -1,6 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
+import 'package:assets_audio_player/assets_audio_player.dart';
+
+
 class PreparationPage extends StatefulWidget {
   PreparationPage({Key key}) : super(key: key);
 
@@ -8,6 +11,9 @@ class PreparationPage extends StatefulWidget {
 }
 
 class _PreparationPageState extends State<PreparationPage> {
+
+  final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
+
   Timer _timer;
   int _start = 60;
 
@@ -31,6 +37,14 @@ class _PreparationPageState extends State<PreparationPage> {
   }
 
   _PreparationPageState() {
+
+    _assetsAudioPlayer.open(AssetsAudio(
+      asset: "segundos.mp3",
+      folder: "assets/sonidos/",
+    ));
+
+    _assetsAudioPlayer.playOrPause();
+
     startTimer(5);
   }
 

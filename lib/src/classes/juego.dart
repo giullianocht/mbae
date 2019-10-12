@@ -12,7 +12,7 @@ class _Juego{
   List<dynamic> _resultados;
   int salidos;
   Map<String,dynamic> _currentTarjeta;
-  int cantPalabras = 26;
+  int cantPalabras = 70;
 
   _Juego(){
     borrar();
@@ -21,7 +21,7 @@ class _Juego{
   //Borrar datos
   void borrar(){
     _tarjetas = [];
-    numeros = new List(26);
+    numeros = new List(70);
     _resultados = [];
     _currentTarjeta = {};
     this.salidos = 0;
@@ -45,7 +45,7 @@ class _Juego{
   }
   
   //Obtiene un numero random del vector sin repetir 
-  int obtenerNumero(){
+  Future<int> obtenerNumero() async {
     var rand = Random();
     int numeroRandom = rand.nextInt(cantPalabras - salidos);
     int aux;
@@ -69,7 +69,7 @@ class _Juego{
       _tarjetas = await obtenerTarjetas();
     }
 
-    id = obtenerNumero();
+    id = await obtenerNumero();
 
     for(Map<String,dynamic> tar in _tarjetas){
       if(tar['id'] == id){
@@ -83,19 +83,22 @@ class _Juego{
 
   //Corrige la palabra
   void corregirPalabra({bool correcto}){
+    if(_currentTarjeta.isNotEmpty){
+  
+      Map<String, dynamic> tarjeta = _currentTarjeta;
+      tarjeta['correcto'] = false;
 
-    Map<String, dynamic> tarjeta = _currentTarjeta;
-    tarjeta['correcto'] = false;
+      if(correcto){
+        tarjeta['correcto'] = true;
+      }
 
-    if(correcto){
-      tarjeta['correcto'] = true;
+      if(_resultados.contains(tarjeta)){
+        return;
+      }
+
+      _resultados.add(tarjeta);
+
     }
-
-    if(_resultados.contains(tarjeta)){
-      return;
-    }
-
-    _resultados.add(tarjeta);
 
   }
 

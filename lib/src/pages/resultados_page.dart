@@ -1,10 +1,29 @@
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 
 import 'package:mbae/src/classes/juego.dart';
 
 
-class ResultadosPage extends StatelessWidget {
+class ResultadosPage extends StatefulWidget {
   const ResultadosPage({Key key}) : super(key: key);
+
+  @override
+  _ResultadosPageState createState() => _ResultadosPageState();
+}
+
+class _ResultadosPageState extends State<ResultadosPage> {
+
+  final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
+
+
+  _ResultadosPageState(){
+    _assetsAudioPlayer.open(AssetsAudio(
+      asset: "accomplished.mp3",
+      folder: "assets/sonidos/",
+    ));
+
+    _assetsAudioPlayer.playOrPause();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +135,4 @@ class ResultadosPage extends StatelessWidget {
   double porcentaje(double porcentaje, double valor){
     return (porcentaje*valor) / 100;
   }
-
-
 }

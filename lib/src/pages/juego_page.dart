@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
@@ -37,10 +38,13 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   bool bandera = true, mostrarImagen = false;
 
   //Palabra
-  String palabra;
+  String palabra = " ";
 
   double height, width;
 
+  final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
+
+  
 
   void startTimer(int start) {
 
@@ -52,10 +56,21 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       (Timer timer) => setState(
         () {
           if (_start < 1) {
+
             _timer.cancel();
+
             Navigator.pushReplacementNamed(context, 'resultados');
+
           } else {
             _start = _start - 1;
+            if(_start == 10){
+              _assetsAudioPlayer.open(AssetsAudio(
+                asset: "segundos.mp3",
+                folder: "assets/sonidos/",
+              ));
+
+              _assetsAudioPlayer.playOrPause();
+            }
           }
         },
       ),
@@ -64,6 +79,14 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
 
   _JuegoPageState(){
+
+    _assetsAudioPlayer.open(AssetsAudio(
+      asset: "for-sure.mp3",
+      folder: "assets/sonidos/",
+    ));
+
+    _assetsAudioPlayer.playOrPause();
+
     juego.borrar();
     cambiarPalabra();
     startTimer(60);
