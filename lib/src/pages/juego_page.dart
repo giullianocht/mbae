@@ -42,7 +42,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   double height, width;
 
-   final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
+  final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
 
   
 
@@ -56,14 +56,11 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       (Timer timer) => setState(
         () {
           if (_start < 1) {
-            _assetsAudioPlayer.open(AssetsAudio(
-              asset: "accomplished.mp3",
-              folder: "assets/",
-            ));
-            _assetsAudioPlayer.playOrPause();
 
             _timer.cancel();
+
             Navigator.pushReplacementNamed(context, 'resultados');
+
           } else {
             _start = _start - 1;
             if(_start == 10){
