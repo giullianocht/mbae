@@ -8,17 +8,13 @@ import 'package:sensors/sensors.dart';
 import 'package:mbae/src/classes/juego.dart';
 
 //Pagina Home
-class JuegoPage extends StatefulWidget{
-
-  
-  
+class JuegoPage extends StatefulWidget {
   @override
   _JuegoPageState createState() => _JuegoPageState();
 }
 
-class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
-
-   // event returned from accelerometer stream
+class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver {
+  // event returned from accelerometer stream
   AccelerometerEvent event;
   // hold a refernce to these, so that they can be disposed
   StreamSubscription accel;
@@ -44,10 +40,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
 
-  
-
   void startTimer(int start) {
-
     _start = start;
 
     const oneSec = const Duration(milliseconds: 1000);
@@ -56,14 +49,12 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
       (Timer timer) => setState(
         () {
           if (_start < 1) {
-
             _timer.cancel();
 
             Navigator.pushReplacementNamed(context, 'resultados');
-
           } else {
             _start = _start - 1;
-            if(_start == 10){
+            if (_start == 10) {
               _assetsAudioPlayer.open(AssetsAudio(
                 asset: "segundos.mp3",
                 folder: "assets/sonidos/",
@@ -77,9 +68,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
     );
   }
 
-
-  _JuegoPageState(){
-
+  _JuegoPageState() {
     _assetsAudioPlayer.open(AssetsAudio(
       asset: "for-sure.mp3",
       folder: "assets/sonidos/",
@@ -95,29 +84,29 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   @override
   Widget build(BuildContext context) {
-
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
-    
+
     return Scaffold(
-      backgroundColor: background,
-      body: Center(
-        child: Column(
+        backgroundColor: background,
+        body: Center(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Text("$_start",style: TextStyle(fontSize: 30),),
+              Text(
+                "$_start",
+                style: TextStyle(fontSize: 30),
+              ),
               Container(
-                width: porcentaje(100, width) ,
-                height: porcentaje(60, height),
-                // margin: EdgeInsets.only(bottom: 100.0),
-                child: mostrarImagen ? imagen() : texto()
-                // child: imagen()
-              )
+                  width: porcentaje(100, width),
+                  height: porcentaje(60, height),
+                  // margin: EdgeInsets.only(bottom: 100.0),
+                  child: mostrarImagen ? imagen() : texto()
+                  // child: imagen()
+                  )
             ],
           ),
-      )
-    );
-
+        ));
   }
 
   startAccelerometer() {
@@ -145,49 +134,44 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
         }
       });
     }
-
-
   }
 
-  setColor(AccelerometerEvent event){
+  setColor(AccelerometerEvent event) {
     // Calculate Left
-    double z = event.z ;
+    double z = event.z;
 
-    if(z >= 7) {
+    if (z >= 7) {
       background = Colors.lightGreenAccent;
       Vibration.vibrate();
 
-      if(bandera){
+      if (bandera) {
         contadorImagen = 2;
         juego.corregirPalabra(correcto: true);
         bandera = false;
       }
-
-    }else if(z <= -7){
-      
+    } else if (z <= -7) {
       Vibration.vibrate();
 
-      if(bandera){
+      if (bandera) {
         contadorImagen++;
-        if(contadorImagen == 1){
+        if (contadorImagen == 1) {
           background = Colors.blueAccent;
           bandera = false;
-        }else if(contadorImagen == 2){
+        } else if (contadorImagen == 2) {
           background = Colors.redAccent;
           juego.corregirPalabra(correcto: false);
           bandera = false;
         }
       }
-
-    }else{
-      background = Colors.yellow; 
+    } else {
+      background = Colors.yellow;
       Vibration.cancel();
 
-      if(!bandera){
-        if(contadorImagen == 1){
+      if (!bandera) {
+        if (contadorImagen == 1) {
           mostrarImagen = true;
           bandera = true;
-        }else if(contadorImagen == 2){
+        } else if (contadorImagen == 2) {
           mostrarImagen = false;
           cambiarPalabra();
           // cambiarPalabra();
@@ -195,7 +179,6 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
           contadorImagen = 0;
         }
       }
-
     }
 
     setState(() {});
@@ -222,7 +205,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   void dispose() {
     timerAccelerometer?.cancel();
     accel?.cancel();
-    Vibration.cancel();     
+    Vibration.cancel();
     super.dispose();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
@@ -230,13 +213,13 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if(state == AppLifecycleState.paused){
+    if (state == AppLifecycleState.paused) {
       _timer.cancel();
       timerAccelerometer?.cancel();
       accel.pause();
-      Vibration.cancel(); 
+      Vibration.cancel();
     }
-    if(state == AppLifecycleState.resumed){
+    if (state == AppLifecycleState.resumed) {
       startTimer(_start);
       accel.resume();
       startAccelerometer();
@@ -250,25 +233,28 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   }
 
   //Muestra imagen
-  Widget imagen(){
+  Widget imagen() {
     String pathImg = juego.obtenerRutaImagen();
 
-    return Center(child: Image.asset(pathImg, fit: BoxFit.fill,));
+    return Center(
+        child: Image.asset(
+      pathImg,
+      fit: BoxFit.fill,
+    ));
   }
-
 
   //Muestra palabra
-  Widget texto(){
+  Widget texto() {
     return Center(
-      child: Container(
-        margin: EdgeInsets.only(bottom: 90.0),
-        child: Text("$palabra",style: TextStyle(fontSize: 80, fontFamily: 'Sunday'),)
-      )
-      );
+        child: Container(
+            margin: EdgeInsets.only(bottom: 90.0),
+            child: Text(
+              "$palabra",
+              style: TextStyle(fontSize: 80, fontFamily: 'Sunday'),
+            )));
   }
 
-  double porcentaje(double porcentaje, double valor){
-    return (porcentaje*valor) / 100;
+  double porcentaje(double porcentaje, double valor) {
+    return (porcentaje * valor) / 100;
   }
-
 }
