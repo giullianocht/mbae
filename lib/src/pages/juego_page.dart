@@ -38,7 +38,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
   bool bandera = true, mostrarImagen = false;
 
   //Palabra
-  String palabra;
+  String palabra = " ";
 
   double height, width;
 
@@ -66,7 +66,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
             if(_start == 10){
               _assetsAudioPlayer.open(AssetsAudio(
                 asset: "segundos.mp3",
-                folder: "assets/",
+                folder: "assets/sonidos/",
               ));
 
               _assetsAudioPlayer.playOrPause();
@@ -82,7 +82,7 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver{
 
     _assetsAudioPlayer.open(AssetsAudio(
       asset: "for-sure.mp3",
-      folder: "assets/",
+      folder: "assets/sonidos/",
     ));
 
     _assetsAudioPlayer.playOrPause();

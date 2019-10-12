@@ -19,7 +19,7 @@ class _ResultadosPageState extends State<ResultadosPage> {
   _ResultadosPageState(){
     _assetsAudioPlayer.open(AssetsAudio(
       asset: "accomplished.mp3",
-      folder: "assets/",
+      folder: "assets/sonidos/",
     ));
 
     _assetsAudioPlayer.playOrPause();

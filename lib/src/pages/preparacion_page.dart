@@ -40,7 +40,7 @@ class _PreparationPageState extends State<PreparationPage> {
 
     _assetsAudioPlayer.open(AssetsAudio(
       asset: "segundos.mp3",
-      folder: "assets/",
+      folder: "assets/sonidos/",
     ));
 
     _assetsAudioPlayer.playOrPause();

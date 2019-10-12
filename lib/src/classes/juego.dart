@@ -83,19 +83,22 @@ class _Juego{
 
   //Corrige la palabra
   void corregirPalabra({bool correcto}){
+    if(_currentTarjeta.isNotEmpty){
+  
+      Map<String, dynamic> tarjeta = _currentTarjeta;
+      tarjeta['correcto'] = false;
 
-    Map<String, dynamic> tarjeta = _currentTarjeta;
-    tarjeta['correcto'] = false;
+      if(correcto){
+        tarjeta['correcto'] = true;
+      }
 
-    if(correcto){
-      tarjeta['correcto'] = true;
+      if(_resultados.contains(tarjeta)){
+        return;
+      }
+
+      _resultados.add(tarjeta);
+
     }
-
-    if(_resultados.contains(tarjeta)){
-      return;
-    }
-
-    _resultados.add(tarjeta);
 
   }
 
