@@ -45,7 +45,7 @@ class _Juego{
   }
   
   //Obtiene un numero random del vector sin repetir 
-  int obtenerNumero(){
+  Future<int> obtenerNumero() async {
     var rand = Random();
     int numeroRandom = rand.nextInt(cantPalabras - salidos);
     int aux;
@@ -69,7 +69,7 @@ class _Juego{
       _tarjetas = await obtenerTarjetas();
     }
 
-    id = obtenerNumero();
+    id = await obtenerNumero();
 
     for(Map<String,dynamic> tar in _tarjetas){
       if(tar['id'] == id){
