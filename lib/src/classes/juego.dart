@@ -21,7 +21,7 @@ class _Juego{
   //Borrar datos
   void borrar(){
     _tarjetas = [];
-    numeros = new List(26);
+    numeros = new List(70);
     _resultados = [];
     _currentTarjeta = {};
     this.salidos = 0;
