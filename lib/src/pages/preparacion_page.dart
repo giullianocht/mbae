@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'package:assets_audio_player/assets_audio_player.dart';
 
-
 class PreparationPage extends StatefulWidget {
   PreparationPage({Key key}) : super(key: key);
 
@@ -11,7 +10,6 @@ class PreparationPage extends StatefulWidget {
 }
 
 class _PreparationPageState extends State<PreparationPage> {
-
   final AssetsAudioPlayer _assetsAudioPlayer = AssetsAudioPlayer();
 
   Timer _timer;
@@ -37,7 +35,6 @@ class _PreparationPageState extends State<PreparationPage> {
   }
 
   _PreparationPageState() {
-
     _assetsAudioPlayer.open(AssetsAudio(
       asset: "segundos.mp3",
       folder: "assets/sonidos/",
@@ -59,14 +56,13 @@ class _PreparationPageState extends State<PreparationPage> {
             Text(
               "Colocar el dispositivo en la frente",
               style: TextStyle(
+                fontFamily: 'Sunday',
                 fontSize: 35.0,
               ),
             ),
             Text(
               "el juego comienza en",
-              style: TextStyle(
-                fontSize: 35.0,
-              ),
+              style: TextStyle(fontSize: 35.0, fontFamily: 'Sunday'),
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
