@@ -81,7 +81,7 @@ class DevelopersInfo extends StatelessWidget {
                       ),
                       TextSpan(
                         text:
-                            "\n \t\tEl juego se desarrolló para el concurso de aplicaciones móviles de la XVII Exposición, Tecnológica y Científica “Ñamopu'ã Ñane Ñe'ê” – 2019 de la Facultad Politécnica de la Universidad Nacional de Asunción.",
+                            "\n \t\tEl juego se desarrolló para el concurso de aplicaciones móviles de la XVII Exposición, Tecnológica y Científica “Ñamopu'ã Ñane Ñe'ê” – 2019 en la Facultad Politécnica de la Universidad Nacional de Asunción.",
                       )
                     ],
                   ),
