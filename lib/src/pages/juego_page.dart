@@ -95,7 +95,10 @@ class _JuegoPageState extends State<JuegoPage> with WidgetsBindingObserver {
             children: <Widget>[
               Text(
                 "$_start",
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(
+                  fontSize: 30,
+                  fontFamily: "Catalunya",
+                ),
               ),
               Container(
                   width: porcentaje(100, width),

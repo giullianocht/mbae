@@ -77,11 +77,11 @@ class DevelopersInfo extends StatelessWidget {
                     children: <TextSpan>[
                       TextSpan(
                         text:
-                            " \t\tEs un juego para dos o mas personas que buscan divertirse y aprender palabras cotidianas en guarani, consiste en adivinar la palabra mediante mimicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.",
+                            " \t\tEs un juego para dos o más personas que buscan divertirse y aprender palabras cotidianas en guaraní, consiste en adivinar la palabra mediante mímicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.",
                       ),
                       TextSpan(
                         text:
-                            "\n \t\tEl juego se desarrollo para el concurso de aplicaciones moviles en la Exposicion , Tecnologia y Ciencias 2019 de la Facultad Politecnica de la Universidad Nacional de Asuncion con el lema Ñamopua Ñande Ñee.",
+                            "\n \t\tEl juego se desarrolló para el concurso de aplicaciones móviles de la XVII Exposición, Tecnológica y Científica “Ñamopu'ã Ñane Ñe'ê” – 2019 de la Facultad Politécnica de la Universidad Nacional de Asunción.",
                       )
                     ],
                   ),

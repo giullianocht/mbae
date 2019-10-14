@@ -53,6 +53,10 @@ flutter:
     - family: Sunday
       fonts:
         - asset: fonts/Sunday.ttf
+    - family: Catalunya
+      fonts:
+        - asset: fonts/Catalunya.ttf
+    
   # To add assets to your application, add an assets section, like this:
   assets:
    - data/data.json
