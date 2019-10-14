@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Instrucciones extends StatefulWidget {
   @override
@@ -51,7 +52,8 @@ class _InstruccionesState extends State<Instrucciones> {
                             'assets/instrucciones/gesto_correcto.png',
                             width: porcentaje(30, width),
                           ),
-                          Text('Una vez arriba es correcto'),
+                          Text(
+                              'Inclina el teléfono boca arriba si adivinaste la palabra'),
                         ],
                       ),
                     ),
@@ -63,7 +65,8 @@ class _InstruccionesState extends State<Instrucciones> {
                             'assets/instrucciones/gesto_ayuda.png',
                             width: porcentaje(30, width),
                           ),
-                          Text('Una vez abajo es ayuda')
+                          Text(
+                              'Inclina el teléfono boca abajo y veras una imagen de la palabra como ayuda')
                         ],
                       ),
                     ),
@@ -75,14 +78,25 @@ class _InstruccionesState extends State<Instrucciones> {
                             'assets/instrucciones/gesto_incorrecto.png',
                             width: porcentaje(30, width),
                           ),
-                          Text('Una vez abajo es incorrecto')
+                          Text(
+                              'Si vuelves a inclinar el teléfono boca abajo luego de ver la imagen estarás pasando la palabra')
                         ],
                       ),
                     ),
                     //PARA LA ULTIMA PAGINA SE INSERTA UNA IMAGEN Y UN BOTON DE SALIDA
                     Center(
                       child: Container(
-                        child: Text("JAHUGA"),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Icon(Icons.timer),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Text(
+                                  "Trata de adivinar tantas palabras como sea posible antes de que se acabe el tiempo"),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
