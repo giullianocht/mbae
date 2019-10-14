@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
   fontSize: 20,
-  fontFamily: "HeyAugust",
+  fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
       offset: Offset(1.0, 1.0),
@@ -49,7 +49,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30.0,
-                    fontFamily: "HeyAugust",
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),
@@ -104,7 +104,7 @@ class DevelopersInfo extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28.0,
-                            fontFamily: "HeyAugust",
+                            fontFamily: "CaviarBold",
                             shadows: <Shadow>[
                               Shadow(
                                 offset: Offset(1.0, 1.0),
@@ -143,7 +143,7 @@ class DevelopersInfo extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25.0,
-                        fontFamily: "HeyAugust",
+                        fontFamily: "CaviarBold",
                         shadows: <Shadow>[
                           Shadow(
                             offset: Offset(1.0, 1.0),
@@ -173,7 +173,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25.0,
-                    fontFamily: "HeyAugust",
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),
@@ -197,7 +197,7 @@ class DevelopersInfo extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 25.0,
-                    fontFamily: "HeyAugust",
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),

@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
   fontSize: 25,
-  fontFamily: "HeyAugust",
+  fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
       offset: Offset(1.0, 1.0),

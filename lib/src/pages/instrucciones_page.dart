@@ -1,6 +1,5 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Instrucciones extends StatefulWidget {
   @override
@@ -53,7 +52,9 @@ class _InstruccionesState extends State<Instrucciones> {
                             width: porcentaje(30, width),
                           ),
                           Text(
-                              'Inclina el teléfono boca arriba si adivinaste la palabra'),
+                            'Inclina el teléfono boca arriba si adivinaste la palabra',
+                            style: TextStyle(fontFamily: "CaviarItalic"),
+                          ),
                         ],
                       ),
                     ),
@@ -66,7 +67,9 @@ class _InstruccionesState extends State<Instrucciones> {
                             width: porcentaje(30, width),
                           ),
                           Text(
-                              'Inclina el teléfono boca abajo y veras una imagen de la palabra como ayuda')
+                            'Inclina el teléfono boca abajo y veras una imagen de la palabra como ayuda',
+                            style: TextStyle(fontFamily: "CaviarItalic"),
+                          )
                         ],
                       ),
                     ),
@@ -79,7 +82,9 @@ class _InstruccionesState extends State<Instrucciones> {
                             width: porcentaje(30, width),
                           ),
                           Text(
-                              'Si vuelves a inclinar el teléfono boca abajo luego de ver la imagen estarás pasando la palabra')
+                            'Si vuelves a inclinar el teléfono boca abajo luego de ver la imagen estarás pasando la palabra',
+                            style: TextStyle(fontFamily: "CaviarItalic"),
+                          )
                         ],
                       ),
                     ),
@@ -93,7 +98,9 @@ class _InstruccionesState extends State<Instrucciones> {
                             Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text(
-                                  "Trata de adivinar tantas palabras como sea posible antes de que se acabe el tiempo"),
+                                "Trata de adivinar tantas palabras como sea posible antes de que se acabe el tiempo",
+                                style: TextStyle(fontFamily: "CaviarItalic"),
+                              ),
                             ),
                           ],
                         ),
