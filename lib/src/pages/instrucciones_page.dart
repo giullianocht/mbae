@@ -54,9 +54,9 @@ class _InstruccionesState extends State<Instrucciones> {
                           Text(
                             'Inclina el teléfono boca arriba si adivinaste la palabra',
                             style: TextStyle(
-                              fontFamily: "CaviarItalic",
-                              fontSize: 20.00,
-                            ),
+                                fontFamily: "CaviarItalic",
+                                fontSize: 20.00,
+                                color: Colors.white),
                             textAlign: TextAlign.center,
                           ),
                         ],
@@ -73,7 +73,9 @@ class _InstruccionesState extends State<Instrucciones> {
                           Text(
                             'Inclina el teléfono boca abajo y veras una imagen de la palabra como ayuda',
                             style: TextStyle(
-                                fontFamily: "CaviarItalic", fontSize: 20.0),
+                                fontFamily: "CaviarItalic",
+                                fontSize: 20.0,
+                                color: Colors.white),
                             textAlign: TextAlign.center,
                           )
                         ],
@@ -90,7 +92,9 @@ class _InstruccionesState extends State<Instrucciones> {
                           Text(
                             'Si vuelves a inclinar el teléfono boca abajo luego de ver la imagen estarás pasando la palabra',
                             style: TextStyle(
-                                fontFamily: "CaviarItalic", fontSize: 20.0),
+                                fontFamily: "CaviarItalic",
+                                fontSize: 20.0,
+                                color: Colors.white),
                             textAlign: TextAlign.center,
                           )
                         ],
@@ -102,13 +106,19 @@ class _InstruccionesState extends State<Instrucciones> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Icon(Icons.timer),
+                            Icon(
+                              Icons.timer,
+                              color: Colors.white,
+                              size: 40.0,
+                            ),
                             Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text(
                                 "Trata de adivinar tantas palabras como sea posible\nantes de que se acabe el tiempo\n\n\n¡¡¡ JAHUGA !!!",
                                 style: TextStyle(
-                                    fontFamily: "CaviarItalic", fontSize: 20.0),
+                                    fontFamily: "CaviarItalic",
+                                    fontSize: 20.0,
+                                    color: Colors.white),
                                 textAlign: TextAlign.center,
                               ),
                             ),
