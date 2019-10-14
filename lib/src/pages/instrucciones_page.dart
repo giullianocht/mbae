@@ -53,7 +53,11 @@ class _InstruccionesState extends State<Instrucciones> {
                           ),
                           Text(
                             'Inclina el teléfono boca arriba si adivinaste la palabra',
-                            style: TextStyle(fontFamily: "CaviarItalic"),
+                            style: TextStyle(
+                              fontFamily: "CaviarItalic",
+                              fontSize: 20.00,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ],
                       ),
@@ -68,7 +72,9 @@ class _InstruccionesState extends State<Instrucciones> {
                           ),
                           Text(
                             'Inclina el teléfono boca abajo y veras una imagen de la palabra como ayuda',
-                            style: TextStyle(fontFamily: "CaviarItalic"),
+                            style: TextStyle(
+                                fontFamily: "CaviarItalic", fontSize: 20.0),
+                            textAlign: TextAlign.center,
                           )
                         ],
                       ),
@@ -83,7 +89,9 @@ class _InstruccionesState extends State<Instrucciones> {
                           ),
                           Text(
                             'Si vuelves a inclinar el teléfono boca abajo luego de ver la imagen estarás pasando la palabra',
-                            style: TextStyle(fontFamily: "CaviarItalic"),
+                            style: TextStyle(
+                                fontFamily: "CaviarItalic", fontSize: 20.0),
+                            textAlign: TextAlign.center,
                           )
                         ],
                       ),
@@ -98,8 +106,10 @@ class _InstruccionesState extends State<Instrucciones> {
                             Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text(
-                                "Trata de adivinar tantas palabras como sea posible antes de que se acabe el tiempo",
-                                style: TextStyle(fontFamily: "CaviarItalic"),
+                                "Trata de adivinar tantas palabras como sea posible\nantes de que se acabe el tiempo\n\n\n¡¡¡ JAHUGA !!!",
+                                style: TextStyle(
+                                    fontFamily: "CaviarItalic", fontSize: 20.0),
+                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],

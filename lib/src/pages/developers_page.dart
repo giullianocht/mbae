@@ -3,7 +3,7 @@ import 'package:mbae/src/widgets/contact_developer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
-  fontSize: 20,
+  fontSize: 15,
   fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
@@ -48,7 +48,7 @@ class DevelopersInfo extends StatelessWidget {
                   "¿ Mba'e ?",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30.0,
+                    fontSize: 20.0,
                     fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
@@ -90,7 +90,7 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //Aca
-              padding: const EdgeInsets.all(0.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Row(
                 //Aca
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -103,7 +103,7 @@ class DevelopersInfo extends StatelessWidget {
                           "Desarrolladores",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28.0,
+                            fontSize: 20.0,
                             fontFamily: "CaviarBold",
                             shadows: <Shadow>[
                               Shadow(
@@ -142,7 +142,7 @@ class DevelopersInfo extends StatelessWidget {
                       "Diseño",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25.0,
+                        fontSize: 20.0,
                         fontFamily: "CaviarBold",
                         shadows: <Shadow>[
                           Shadow(
@@ -166,13 +166,13 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //aca
-              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Center(
                 child: Text(
                   "Contacto",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
+                    fontSize: 20.0,
                     fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
@@ -196,7 +196,7 @@ class DevelopersInfo extends StatelessWidget {
                   "mbae.app@gmail.com",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
+                    fontSize: 15.0,
                     fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(

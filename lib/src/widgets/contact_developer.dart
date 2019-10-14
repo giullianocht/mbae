@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
-  fontSize: 25,
+  fontSize: 15,
   fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
