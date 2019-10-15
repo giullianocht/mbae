@@ -70,6 +70,7 @@ flutter:
    - assets/palabras/
    - assets/informacion/
    - assets/inicio/
+   - assets/resultados/
    - assets/instrucciones/
    - assets/sonidos/
    
