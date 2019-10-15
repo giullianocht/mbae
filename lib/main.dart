@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mbae/src/routes/routes.dart';
@@ -19,11 +20,14 @@ class MyRunApp extends StatelessWidget {
     List<SystemUiOverlay> sys = [];
     SystemChrome.setEnabledSystemUIOverlays(sys);
     //--------------------------------------------------
-    return MaterialApp(
-      title: "¿Mba'e?",
-      debugShowCheckedModeBanner: false,
-      routes: getApplicationRoutes(),
-      initialRoute: '/',
+    return DevicePreview(
+          child: MaterialApp(
+        title: "¿Mba'e?",
+        builder: DevicePreview.appBuilder,
+        debugShowCheckedModeBanner: false,
+        routes: getApplicationRoutes(),
+        initialRoute: '/',
+      ),
     );
   }
 }

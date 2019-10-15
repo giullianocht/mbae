@@ -166,7 +166,7 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //aca
-              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
               child: Center(
                 child: Text(
                   "Contacto",
