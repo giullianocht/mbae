@@ -42,7 +42,6 @@ class _InstruccionesState extends State<Instrucciones> {
                   pageSnapping: true,
                   controller: pagina,
                   children: <Widget>[
-                    //Se genera una imagen por pagina
                     Container(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -100,7 +99,6 @@ class _InstruccionesState extends State<Instrucciones> {
                         ],
                       ),
                     ),
-                    //PARA LA ULTIMA PAGINA SE INSERTA UNA IMAGEN Y UN BOTON DE SALIDA
                     Center(
                       child: Container(
                         child: Column(
@@ -114,7 +112,7 @@ class _InstruccionesState extends State<Instrucciones> {
                             Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text(
-                                "Trata de adivinar tantas palabras como sea posible\nantes de que se acabe el tiempo\n\n\n¡¡¡ JAHUGA !!!",
+                                "Trata de adivinar tantas palabras como sea posible\nantes de que se acabe el tiempo\n\n\n¡¡ Ñañembosarái !!\n(juguemos)",
                                 style: TextStyle(
                                     fontFamily: "CaviarItalic",
                                     fontSize: 20.0,
