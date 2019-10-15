@@ -8,7 +8,7 @@ class _Juego {
   List<dynamic> _resultados;
   int salidos;
   Map<String, dynamic> _currentTarjeta;
-  int cantPalabras = 70;
+  int cantPalabras = 70, cantCorrecta = 0, cantIncorrecta = 0;
 
   _Juego() {
     borrar();
@@ -16,6 +16,8 @@ class _Juego {
 
   //Borrar datos
   void borrar() {
+    cantIncorrecta = 0;
+    cantCorrecta = 0;
     _tarjetas = [];
     numeros = new List(70);
     _resultados = [];
@@ -80,10 +82,13 @@ class _Juego {
   void corregirPalabra({bool correcto}) {
     if (_currentTarjeta.isNotEmpty) {
       Map<String, dynamic> tarjeta = _currentTarjeta;
-      tarjeta['correcto'] = false;
 
       if (correcto) {
         tarjeta['correcto'] = true;
+        cantCorrecta++;
+      }else{
+        tarjeta['correcto'] = false;
+        cantIncorrecta++;
       }
 
       if (_resultados.contains(tarjeta)) {
@@ -102,6 +107,16 @@ class _Juego {
   //Obtener ruta de imagen
   String obtenerRutaImagen() {
     return _currentTarjeta['img'];
+  }
+
+  //Obtener corrextos
+  String obtenerCorrectos(){
+    return cantCorrecta.toString();
+  }
+  
+  //Obtener corrextos
+  String obtenerIncorrectos(){
+    return cantIncorrecta.toString();
   }
 }
 

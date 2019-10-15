@@ -39,6 +39,7 @@ class DevelopersInfo extends StatelessWidget {
                 image: AssetImage("assets/informacion/fondo_informacion.png"),
                 fit: BoxFit.fill)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Center(
               child: Container(
