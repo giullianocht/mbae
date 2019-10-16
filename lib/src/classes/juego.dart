@@ -86,7 +86,7 @@ class _Juego {
       if (correcto) {
         tarjeta['correcto'] = true;
         cantCorrecta++;
-      }else{
+      } else {
         tarjeta['correcto'] = false;
         cantIncorrecta++;
       }
@@ -110,12 +110,12 @@ class _Juego {
   }
 
   //Obtener corrextos
-  String obtenerCorrectos(){
+  String obtenerCorrectos() {
     return cantCorrecta.toString();
   }
-  
+
   //Obtener corrextos
-  String obtenerIncorrectos(){
+  String obtenerIncorrectos() {
     return cantIncorrecta.toString();
   }
 }

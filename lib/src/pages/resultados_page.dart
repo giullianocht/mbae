@@ -30,7 +30,8 @@ class _ResultadosPageState extends State<ResultadosPage> {
         body: Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/resultados/fondo_resultados.png"), fit: BoxFit.cover)),
+              image: AssetImage("assets/resultados/fondo_resultados.png"),
+              fit: BoxFit.cover)),
       child: Center(
           child: Container(
         padding: EdgeInsets.all(20.0),

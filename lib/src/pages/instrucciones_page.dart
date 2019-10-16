@@ -29,7 +29,7 @@ class _InstruccionesState extends State<Instrucciones> {
       backgroundColor: Colors.cyan,
       body: Center(
         child: SafeArea(
-                  child: Column(
+          child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Container(
