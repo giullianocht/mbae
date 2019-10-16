@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
-  fontSize: 25,
-  fontFamily: "HeyAugust",
+  fontSize: 15,
+  fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
       offset: Offset(1.0, 1.0),
@@ -30,7 +30,7 @@ class ContactDeveloper extends StatelessWidget {
     return Container(
         child: Column(children: <Widget>[
       Padding(
-        //Aca
+          //Aca
           padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 3.0),
           child: Container(
             child: Row(

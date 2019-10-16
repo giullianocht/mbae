@@ -48,7 +48,7 @@ class _PreparationPageState extends State<PreparationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreenAccent,
+      backgroundColor: Colors.yellow,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -65,16 +65,13 @@ class _PreparationPageState extends State<PreparationPage> {
               style: TextStyle(fontSize: 35.0, fontFamily: 'Sunday'),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Icon(
-                Icons.arrow_downward,
-                size: 35.0,
-              ),
-            ),
-            Text(
-              "$_start",
-              style: TextStyle(
-                fontSize: 45.0,
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                "$_start",
+                style: TextStyle(
+                  fontSize: 45.0,
+                  fontFamily: "Catalunya",
+                ),
               ),
             )
           ],

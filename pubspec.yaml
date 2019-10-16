@@ -49,17 +49,28 @@ flutter:
   fonts:
     - family: HeyAugust
       fonts:
-        - asset: fonts/HeyAugust.ttf
+        - asset: fonts/HeyAugust.ttf        
     - family: Sunday
       fonts:
         - asset: fonts/Sunday.ttf
+    - family: Catalunya
+      fonts:
+        - asset: fonts/Catalunya.ttf
+    - family: CaviarBold
+      fonts:
+        - asset: fonts/CaviarDreams_BoldItalic.ttf
+    - family: CaviarItalic
+      fonts:
+        - asset: fonts/CaviarDreams_Italic.ttf
   # To add assets to your application, add an assets section, like this:
+
   assets:
    - data/data.json
    - assets/
    - assets/palabras/
    - assets/informacion/
    - assets/inicio/
+   - assets/resultados/
    - assets/instrucciones/
    - assets/sonidos/
    

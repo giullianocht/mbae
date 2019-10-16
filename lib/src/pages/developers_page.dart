@@ -3,8 +3,8 @@ import 'package:mbae/src/widgets/contact_developer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 TextStyle defaultStyle = TextStyle(
-  fontSize: 20,
-  fontFamily: "HeyAugust",
+  fontSize: 15,
+  fontFamily: "CaviarBold",
   shadows: <Shadow>[
     Shadow(
       offset: Offset(1.0, 1.0),
@@ -39,6 +39,7 @@ class DevelopersInfo extends StatelessWidget {
                 image: AssetImage("assets/informacion/fondo_informacion.png"),
                 fit: BoxFit.fill)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Center(
               child: Container(
@@ -48,8 +49,8 @@ class DevelopersInfo extends StatelessWidget {
                   "¿ Mba'e ?",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30.0,
-                    fontFamily: "HeyAugust",
+                    fontSize: 20.0,
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),
@@ -77,11 +78,11 @@ class DevelopersInfo extends StatelessWidget {
                     children: <TextSpan>[
                       TextSpan(
                         text:
-                            " \t\tEs un juego para dos o mas personas que buscan divertirse y aprender palabras cotidianas en guarani, consiste en adivinar la palabra mediante mimicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.",
+                            " \t\tEs un juego para dos o más personas que buscan divertirse y aprender palabras cotidianas en guaraní, consiste en adivinar la palabra mediante mímicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.",
                       ),
                       TextSpan(
                         text:
-                            "\n \t\tEl juego se desarrollo para el concurso de aplicaciones moviles en la Exposicion , Tecnologia y Ciencias 2019 de la Facultad Politecnica de la Universidad Nacional de Asuncion con el lema Ñamopua Ñande Ñee.",
+                            "\n \t\tEl juego se desarrolló para el concurso de aplicaciones móviles de la XVII Exposición, Tecnológica y Científica “Ñamopu'ã Ñane Ñe'ê” – 2019 de la Facultad Politécnica de la Universidad Nacional de Asunción.",
                       )
                     ],
                   ),
@@ -90,7 +91,7 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //Aca
-              padding: const EdgeInsets.all(0.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Row(
                 //Aca
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -103,8 +104,8 @@ class DevelopersInfo extends StatelessWidget {
                           "Desarrolladores",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28.0,
-                            fontFamily: "HeyAugust",
+                            fontSize: 20.0,
+                            fontFamily: "CaviarBold",
                             shadows: <Shadow>[
                               Shadow(
                                 offset: Offset(1.0, 1.0),
@@ -142,8 +143,8 @@ class DevelopersInfo extends StatelessWidget {
                       "Diseño",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 25.0,
-                        fontFamily: "HeyAugust",
+                        fontSize: 20.0,
+                        fontFamily: "CaviarBold",
                         shadows: <Shadow>[
                           Shadow(
                             offset: Offset(1.0, 1.0),
@@ -172,8 +173,8 @@ class DevelopersInfo extends StatelessWidget {
                   "Contacto",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
-                    fontFamily: "HeyAugust",
+                    fontSize: 20.0,
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),
@@ -196,8 +197,8 @@ class DevelopersInfo extends StatelessWidget {
                   "mbae.app@gmail.com",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 25.0,
-                    fontFamily: "HeyAugust",
+                    fontSize: 15.0,
+                    fontFamily: "CaviarBold",
                     shadows: <Shadow>[
                       Shadow(
                         offset: Offset(1.0, 1.0),

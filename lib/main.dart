@@ -20,10 +20,10 @@ class MyRunApp extends StatelessWidget {
     SystemChrome.setEnabledSystemUIOverlays(sys);
     //--------------------------------------------------
     return MaterialApp(
-      title: "¿Mba'e?",
-      debugShowCheckedModeBanner: false,
-      routes: getApplicationRoutes(),
-      initialRoute: '/',
-    );
+        title: "¿Mba'e?",
+        debugShowCheckedModeBanner: false,
+        routes: getApplicationRoutes(),
+        initialRoute: '/',
+      );
   }
 }

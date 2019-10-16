@@ -30,7 +30,7 @@ class _ResultadosPageState extends State<ResultadosPage> {
         body: Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/inicio.jpg"), fit: BoxFit.cover)),
+              image: AssetImage("assets/resultados/fondo_resultados.png"), fit: BoxFit.cover)),
       child: Center(
           child: Container(
         padding: EdgeInsets.all(20.0),
@@ -52,7 +52,7 @@ class _ResultadosPageState extends State<ResultadosPage> {
                 children: mostrarResultados()),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               RaisedButton(
                 color: Colors.redAccent,
@@ -64,9 +64,6 @@ class _ResultadosPageState extends State<ResultadosPage> {
                   Navigator.pushReplacementNamed(context, '/');
                 },
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 10.0, right: 10.0),
-              ),
               RaisedButton(
                 color: Colors.redAccent,
                 child: Icon(
@@ -76,7 +73,13 @@ class _ResultadosPageState extends State<ResultadosPage> {
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, 'preparacion');
                 },
-              )
+              ),
+              Icon(Icons.check_circle, color: Colors.green),
+              Text(juego.obtenerCorrectos(),
+                  style: TextStyle(fontSize: 30.0, fontFamily: "Catalunya")),
+              Icon(Icons.cancel, color: Colors.red),
+              Text(juego.obtenerIncorrectos(),
+                  style: TextStyle(fontSize: 30.0, fontFamily: "Catalunya")),
             ],
           )
         ]),
@@ -103,27 +106,10 @@ class _ResultadosPageState extends State<ResultadosPage> {
         subtitle: Text(resultado['palabra_espanol'],
             style: TextStyle(fontSize: 15.0)),
         leading: iconTemp,
-        trailing: Icon(Icons.arrow_right),
       );
 
       result..add(widgetTemp)..add(Divider());
     });
-
-    // for (var i = 0; i < 10; i++) {
-    //   Icon iconTemp;
-
-    //   iconTemp = Icon(Icons.cancel, color: Colors.red);
-
-    //   final widgetTemp = ListTile(
-    //                 title: Text( "Hola", style: TextStyle(fontSize: 25.0) ),
-    //                 subtitle: Text( "Hola" , style: TextStyle(fontSize: 15.0) ),
-    //                 leading: iconTemp,
-    //                 trailing: Icon(Icons.arrow_right),
-    //               );
-
-    //   result..add(widgetTemp)
-    //         ..add(Divider());
-    // }
 
     return result;
   }
