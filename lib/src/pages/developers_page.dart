@@ -69,7 +69,7 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //Aca
-              padding: const EdgeInsets.symmetric(horizontal: 60.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Container(
                 child: RichText(
                   textAlign: TextAlign.justify,
@@ -91,7 +91,7 @@ class DevelopersInfo extends StatelessWidget {
             ),
             Padding(
               //Aca
-              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
               child: Row(
                 //Aca
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
