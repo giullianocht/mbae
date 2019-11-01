@@ -1,16 +1,8 @@
-# mbae
+# ¿ MBA'E ?
 
-A new Flutter project.
+Es un proyecto realizado en Flutter que se desarrolló para el concurso de aplicaciones móviles de la XVII Exposición, Tecnológica y Científica “Ñamopu'ã Ñane Ñe'ê” – 2019 de la Facultad Politécnica de la Universidad Nacional de Asunción.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Es un juego para dos o más personas que buscan divertirse y aprender palabras cotidianas en guaraní, consiste en adivinar la palabra mediante mímicas o descripciones teniendo un tiempo limitado para adivinar todas las palabras posibles.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Si quieres probarlo puedes descargarlo con el siguiente link - [APK](https://drive.google.com/file/d/13tPavkOYm4HwBcKJELehp0ciIxUe91Wd/view)
