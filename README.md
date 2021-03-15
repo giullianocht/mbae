@@ -14,11 +14,11 @@ Es un juego para dos o más personas que buscan divertirse y aprender palabras c
 <img src="https://github.com/giullianocht/mbae/blob/master/screenshots/5.jpeg"  width="25%" height="35%" />
 </p>
 
-# Descarga
+## Descarga
 
 Si quieres probarlo puedes descargarlo con el siguiente link - [APK](https://drive.google.com/file/d/13tPavkOYm4HwBcKJELehp0ciIxUe91Wd/view)
 
-# Contribuidores
+## Contribuidores
 
 Gracias a estos genios por hacer esto posible! :blush:
 
