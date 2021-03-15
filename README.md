@@ -8,7 +8,14 @@ Es un juego para dos o más personas que buscan divertirse y aprender palabras c
 
 Si quieres probarlo puedes descargarlo con el siguiente link - [APK](https://drive.google.com/file/d/13tPavkOYm4HwBcKJELehp0ciIxUe91Wd/view)
 
-# Contributors
+<p float="left">
+<img src="https://github.com/giullianocht/mbae/blob/master/screenshots/1.jpeg"  width="25%" height="35%" />
+<img src="https://github.com/giullianocht/mbae/blob/master/screenshots/2.jpeg"  width="25%" height="35%" />
+<img src="https://github.com/giullianocht/mbae/blob/master/screenshots/3.jpeg"  width="25%" height="35%" />
+<img src="https://github.com/giullianocht/mbae/blob/master/screenshots/4.jpeg"  width="25%" height="35%" />
+<img src="https://github.com/giullianocht/mbae/blob/master/screenshots/5.jpeg"  width="25%" height="35%" />
+</p>
+# Contribuidores
 
 Gracias a estos genios por hacer esto posible! :blush:
 
